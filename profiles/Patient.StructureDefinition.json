@@ -1,0 +1,27 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://dt4h.eu/fhir/StructureDefinition/Patient",
+  "name": "Patient",
+  "status": "draft",
+  "description": "Demographics and other administrative information about a patient receiving care or other health-related services.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1
+      }
+    ]
+  }
+}

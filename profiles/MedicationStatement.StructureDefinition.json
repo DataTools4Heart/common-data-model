@@ -1,0 +1,99 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://dt4h.eu/fhir/StructureDefinition/MedicationStatement",
+  "name": "MedicationStatement",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding",
+        "path": "MedicationStatement.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcCode",
+        "path": "MedicationStatement.medication[x].coding",
+        "sliceName": "atcCode",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://www.whocc.no/atc"
+        }
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcCode.system",
+        "path": "MedicationStatement.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://www.whocc.no/atc"
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcCode.code",
+        "path": "MedicationStatement.medication[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.subject",
+        "path": "MedicationStatement.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.subject.reference",
+        "path": "MedicationStatement.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.effective[x]",
+        "path": "MedicationStatement.effective[x]",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.dosage.timing",
+        "path": "MedicationStatement.dosage.timing",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate",
+        "path": "MedicationStatement.dosage.doseAndRate",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "min": 1
+      }
+    ]
+  }
+}

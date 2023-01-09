@@ -1,0 +1,94 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://dt4h.eu/fhir/StructureDefinition/Symptom",
+  "name": "Symptom",
+  "status": "draft",
+  "description": "Represents an individual symptom.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:snomedCode",
+        "path": "Observation.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://dt4h.eu/fhir/value-sets/symptoms"
+        }
+      },
+      {
+        "id": "Observation.code.coding:snomedCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.code.coding:snomedCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.subject.reference",
+        "path": "Observation.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

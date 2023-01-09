@@ -1,0 +1,847 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/Electrocardiography",
+  "name": "Electrocardiography",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.category.coding:hl7Category",
+        "path": "Observation.category.coding",
+        "sliceName": "hl7Category",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.category.coding:hl7Category.system",
+        "path": "Observation.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
+      },
+      {
+        "id": "Observation.category.coding:hl7Category.code",
+        "path": "Observation.category.coding.code",
+        "min": 1,
+        "fixedCode": "procedure"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:loincCode",
+        "path": "Observation.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "fixedCode": "34534-8"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.subject.reference",
+        "path": "Observation.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.system"
+            },
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg",
+        "path": "Observation.component",
+        "sliceName": "qrsComplexVentriclesByEkg",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8897-1"
+      },
+      {
+        "id": "Observation.component:qrsComplexVentriclesByEkg.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg",
+        "path": "Observation.component",
+        "sliceName": "pWaveAtriumByEkg",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8894-8"
+      },
+      {
+        "id": "Observation.component:pWaveAtriumByEkg.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:prInterval",
+        "path": "Observation.component",
+        "sliceName": "prInterval",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8625-6"
+      },
+      {
+        "id": "Observation.component:prInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "s"
+      },
+      {
+        "id": "Observation.component:qrsDuration",
+        "path": "Observation.component",
+        "sliceName": "qrsDuration",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8625-6"
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "ms"
+      },
+      {
+        "id": "Observation.component:qtInterval",
+        "path": "Observation.component",
+        "sliceName": "qtInterval",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8634-8"
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "s"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected",
+        "path": "Observation.component",
+        "sliceName": "qtIntervalCorrected",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8636-3"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "s"
+      },
+      {
+        "id": "Observation.component:pWaveAxis",
+        "path": "Observation.component",
+        "sliceName": "pWaveAxis",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pWaveAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pWaveAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pWaveAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:pWaveAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pWaveAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:pWaveAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pWaveAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "deg"
+      },
+      {
+        "id": "Observation.component:qrsAxis",
+        "path": "Observation.component",
+        "sliceName": "qrsAxis",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qrsAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8632-2"
+      },
+      {
+        "id": "Observation.component:qrsAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qrsAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "deg"
+      },
+      {
+        "id": "Observation.component:tWaveAxis",
+        "path": "Observation.component",
+        "sliceName": "tWaveAxis",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:tWaveAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:tWaveAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:tWaveAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:tWaveAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8638-9"
+      },
+      {
+        "id": "Observation.component:tWaveAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:tWaveAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:tWaveAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "deg"
+      },
+      {
+        "id": "Observation.component:ekgImpression",
+        "path": "Observation.component",
+        "sliceName": "ekgImpression",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ekgImpression.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:ekgImpression.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ekgImpression.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:ekgImpression.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8601-7"
+      },
+      {
+        "id": "Observation.component:ekgImpression.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rhythmType",
+        "path": "Observation.component",
+        "sliceName": "rhythmType",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rhythmType.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rhythmType.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rhythmType.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:rhythmType.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8884-9"
+      },
+      {
+        "id": "Observation.component:rhythmType.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://dt4h.eu/fhir/value-sets/ecg-rhythms"
+        }
+      },
+      {
+        "id": "Observation.component:signsOfStElevation",
+        "path": "Observation.component",
+        "sliceName": "signsOfStElevation",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:signsOfStElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:signsOfStElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:signsOfStElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:signsOfStElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "52674009"
+      },
+      {
+        "id": "Observation.component:signsOfStElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation",
+        "path": "Observation.component",
+        "sliceName": "signsOfIschemiaWithoutStElevation"
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "52674009"
+      },
+      {
+        "id": "Observation.component:signsOfIschemiaWithoutStElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}
