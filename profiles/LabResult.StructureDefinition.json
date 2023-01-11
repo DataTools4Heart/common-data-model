@@ -76,7 +76,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dt4h.eu/fhir/value-sets/lab-results"
+          "valueSet": "https://datatools4heart.eu/fhir/value-sets/lab-results"
         }
       },
       {

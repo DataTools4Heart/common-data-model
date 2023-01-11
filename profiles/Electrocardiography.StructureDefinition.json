@@ -742,7 +742,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://dt4h.eu/fhir/value-sets/ecg-rhythms"
+          "valueSet": "https://datatools4heart.eu/fhir/value-sets/ecg-rhythms"
         }
       },
       {

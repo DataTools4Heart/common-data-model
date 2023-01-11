@@ -40,7 +40,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Encounter"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Encounter"
             ]
           }
         ]

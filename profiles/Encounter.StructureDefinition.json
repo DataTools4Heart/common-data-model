@@ -48,7 +48,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Condition"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Condition"
             ]
           }
         ]

@@ -61,7 +61,7 @@
         "binding": {
           "strength": "extensible",
           "description": "Codes identifying vital signs.",
-          "valueSet": "http://dt4h.eu/fhir/ValueSet/vital-signs"
+          "valueSet": "http://datatools4heart.eu/fhir/ValueSet/vital-signs"
         }
       },
       {
@@ -86,7 +86,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://dt4h.eu/fhir/value-sets/vital-signs"
+          "valueSet": "https://datatools4heart.eu/fhir/value-sets/vital-signs"
         }
       },
       {
