@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://dt4h.eu/fhir/StructureDefinition/Encounter",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Encounter",
   "name": "Encounter",
   "status": "draft",
   "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
@@ -26,7 +26,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]

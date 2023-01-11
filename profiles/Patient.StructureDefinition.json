@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://dt4h.eu/fhir/StructureDefinition/Patient",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Patient",
   "name": "Patient",
   "status": "draft",
   "description": "Demographics and other administrative information about a patient receiving care or other health-related services.",

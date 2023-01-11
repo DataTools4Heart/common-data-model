@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/Referral",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Referral",
   "name": "Referral",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -23,7 +23,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]

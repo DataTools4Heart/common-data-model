@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://dt4h.eu/fhir/StructureDefinition/Symptom",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Symptom",
   "name": "Symptom",
   "status": "draft",
   "description": "Represents an individual symptom.",
@@ -60,7 +60,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]

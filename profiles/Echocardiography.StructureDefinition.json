@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/Echocardiography",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Echocardiography",
   "name": "Echocardiography",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -95,7 +95,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]

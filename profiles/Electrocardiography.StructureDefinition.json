@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/Electrocardiography",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Electrocardiography",
   "name": "Electrocardiography",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -89,7 +89,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]

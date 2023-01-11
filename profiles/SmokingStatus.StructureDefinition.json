@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://dt4h.eu/fhir/StructureDefinition/SmokingStatus",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/SmokingStatus",
   "name": "SmokingStatus",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -91,7 +91,15 @@
       {
         "id": "Observation.subject",
         "path": "Observation.subject",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.subject.reference",

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://dt4h.eu/fhir/StructureDefinition/VitalSign",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/VitalSign",
   "name": "VitalSign",
   "status": "draft",
   "description": "Represents an individual vital sign.",
@@ -108,7 +108,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://dt4h.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
             ]
           }
         ]
