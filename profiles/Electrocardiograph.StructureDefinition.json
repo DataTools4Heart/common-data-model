@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Electrocardiography",
-  "name": "Electrocardiography",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Electrocardiograph",
+  "name": "Electrocardiograph",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -123,6 +123,7 @@
               "path": "code.coding.code"
             }
           ],
+          "ordered": false,
           "rules": "open"
         }
       },
@@ -282,7 +283,7 @@
         "id": "Observation.component:prInterval.value[x].unit",
         "path": "Observation.component.value[x].unit",
         "min": 1,
-        "fixedString": "s"
+        "fixedString": "ms"
       },
       {
         "id": "Observation.component:qrsDuration",
@@ -402,7 +403,7 @@
         "id": "Observation.component:qtInterval.value[x].unit",
         "path": "Observation.component.value[x].unit",
         "min": 1,
-        "fixedString": "s"
+        "fixedString": "ms"
       },
       {
         "id": "Observation.component:qtIntervalCorrected",
@@ -462,7 +463,7 @@
         "id": "Observation.component:qtIntervalCorrected.value[x].unit",
         "path": "Observation.component.value[x].unit",
         "min": 1,
-        "fixedString": "s"
+        "fixedString": "ms"
       },
       {
         "id": "Observation.component:pWaveAxis",
@@ -500,7 +501,8 @@
       {
         "id": "Observation.component:pWaveAxis.code.coding:loincCode.code",
         "path": "Observation.component.code.coding.code",
-        "min": 1
+        "min": 1,
+        "fixedCode": "8626-4"
       },
       {
         "id": "Observation.component:pWaveAxis.value[x]",

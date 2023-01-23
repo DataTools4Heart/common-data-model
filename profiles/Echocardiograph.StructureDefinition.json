@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Echocardiography",
-  "name": "Echocardiography",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Echocardiograph",
+  "name": "Echocardiograph",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
