@@ -171,8 +171,7 @@
       {
         "id": "Observation.value[x].coding:snomedCode.code",
         "path": "Observation.value[x].coding.code",
-        "min": 1,
-        "fixedCode": "final"
+        "min": 1
       }
     ]
   }

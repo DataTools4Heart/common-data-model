@@ -13,10 +13,14 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter.type",
-        "path": "Encounter.type",
-        "min": 1,
-        "max": "1"
+        "id": "Encounter.class.system",
+        "path": "Encounter.class.system",
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.code",
+        "path": "Encounter.class.code",
+        "min": 1
       },
       {
         "id": "Encounter.subject",

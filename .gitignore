@@ -1,6 +1,6 @@
-# forge
-.simplifier
-profiles/project.yaml
-profiles/package.json
-profiles/fhirpkg.lock.json
-profiles/*.xml
+*.jar
+*.bat
+*.sh
+onfhir.conf
+logs/*
+.idea/

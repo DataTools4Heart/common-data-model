@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/MedicationStatement",
-  "name": "MedicationStatement",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/MedicationUsed",
+  "name": "MedicationUsed",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -11,6 +11,11 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "MedicationStatement.status",
+        "path": "MedicationStatement.status",
+        "fixedCode": "completed"
+      },
       {
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
