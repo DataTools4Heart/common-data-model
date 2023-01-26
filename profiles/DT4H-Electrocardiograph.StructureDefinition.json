@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Electrocardiograph",
-  "name": "Electrocardiograph",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Electrocardiograph",
+  "name": "DT4H_Electrocardiograph",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -89,7 +89,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]

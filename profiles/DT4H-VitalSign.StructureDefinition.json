@@ -1,8 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/SmokingStatus",
-  "name": "SmokingStatus",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-VitalSign",
+  "name": "DT4H_VitalSign",
   "status": "draft",
+  "description": "Represents an individual vital sign.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -27,33 +28,41 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
-        "id": "Observation.category:socialHistory",
+        "id": "Observation.category:hl7Category",
         "path": "Observation.category",
-        "sliceName": "socialHistory",
+        "sliceName": "hl7Category",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Observation.category:socialHistory.coding",
+        "id": "Observation.category:hl7Category.coding",
         "path": "Observation.category.coding",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Observation.category:socialHistory.coding.system",
+        "id": "Observation.category:hl7Category.coding.system",
         "path": "Observation.category.coding.system",
         "min": 1,
         "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
       },
       {
-        "id": "Observation.category:socialHistory.coding.code",
+        "id": "Observation.category:hl7Category.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
-        "fixedCode": "social-history"
+        "fixedCode": "vital-signs"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "binding": {
+          "strength": "extensible",
+          "description": "Codes identifying vital signs.",
+          "valueSet": "http://datatools4heart.eu/fhir/ValueSet/vital-signs"
+        }
       },
       {
         "id": "Observation.code.coding",
@@ -74,7 +83,11 @@
         "path": "Observation.code.coding",
         "sliceName": "loincCode",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://datatools4heart.eu/fhir/value-sets/vital-signs"
+        }
       },
       {
         "id": "Observation.code.coding:loincCode.system",
@@ -85,7 +98,6 @@
       {
         "id": "Observation.code.coding:loincCode.code",
         "path": "Observation.code.coding.code",
-        "label": "72166-2",
         "min": 1
       },
       {
@@ -96,7 +108,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]
@@ -104,15 +116,7 @@
       {
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
-        "min": 1,
-        "type": [
-          {
-            "code": "string",
-            "profile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ]
+        "min": 1
       },
       {
         "id": "Observation.effective[x]",
@@ -121,9 +125,6 @@
         "type": [
           {
             "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ]
       },
@@ -133,45 +134,9 @@
         "min": 1,
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Quantity"
           }
         ]
-      },
-      {
-        "id": "Observation.value[x].coding",
-        "path": "Observation.value[x].coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.value[x].coding:snomedCode",
-        "path": "Observation.value[x].coding",
-        "sliceName": "snomedCode",
-        "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"
-        }
-      },
-      {
-        "id": "Observation.value[x].coding:snomedCode.system",
-        "path": "Observation.value[x].coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.value[x].coding:snomedCode.code",
-        "path": "Observation.value[x].coding.code",
-        "min": 1
       }
     ]
   }

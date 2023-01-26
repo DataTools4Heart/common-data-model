@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/VitalSign",
-  "name": "VitalSign",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-LabResult",
+  "name": "DT4H_LabResult",
   "status": "draft",
-  "description": "Represents an individual vital sign.",
+  "description": "Represents an individual lab result.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -53,16 +53,7 @@
         "id": "Observation.category:hl7Category.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
-        "fixedCode": "vital-signs"
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "binding": {
-          "strength": "extensible",
-          "description": "Codes identifying vital signs.",
-          "valueSet": "http://datatools4heart.eu/fhir/ValueSet/vital-signs"
-        }
+        "fixedCode": "laboratory"
       },
       {
         "id": "Observation.code.coding",
@@ -82,11 +73,10 @@
         "id": "Observation.code.coding:loincCode",
         "path": "Observation.code.coding",
         "sliceName": "loincCode",
-        "min": 1,
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://datatools4heart.eu/fhir/value-sets/vital-signs"
+          "valueSet": "https://datatools4heart.eu/fhir/value-sets/lab-results"
         }
       },
       {
@@ -108,7 +98,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]
@@ -117,6 +107,18 @@
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
         "min": 1
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Encounter"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.effective[x]",
@@ -135,6 +137,12 @@
         "type": [
           {
             "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "boolean"
           }
         ]
       }

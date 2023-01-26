@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Echocardiograph",
-  "name": "Echocardiograph",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-SmokingStatus",
+  "name": "DT4H_SmokingStatus",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -27,32 +27,33 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
-        "id": "Observation.category:hl7Category",
+        "id": "Observation.category:socialHistory",
         "path": "Observation.category",
-        "sliceName": "hl7Category",
+        "sliceName": "socialHistory",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Observation.category:hl7Category.coding",
+        "id": "Observation.category:socialHistory.coding",
         "path": "Observation.category.coding",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Observation.category:hl7Category.coding.system",
+        "id": "Observation.category:socialHistory.coding.system",
         "path": "Observation.category.coding.system",
         "min": 1,
         "fixedUri": "http://terminology.hl7.org/CodeSystem/observation-category"
       },
       {
-        "id": "Observation.category:hl7Category.coding.code",
+        "id": "Observation.category:socialHistory.coding.code",
         "path": "Observation.category.coding.code",
         "min": 1,
-        "fixedCode": "procedure"
+        "fixedCode": "social-history"
       },
       {
         "id": "Observation.code.coding",
@@ -84,8 +85,8 @@
       {
         "id": "Observation.code.coding:loincCode.code",
         "path": "Observation.code.coding.code",
-        "min": 1,
-        "fixedCode": "34552-0"
+        "label": "72166-2",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -95,7 +96,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]
@@ -103,7 +104,15 @@
       {
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.effective[x]",
@@ -112,31 +121,25 @@
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ]
       },
       {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code.coding.system"
-            }
-          ],
-          "rules": "open"
-        }
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
-        "id": "Observation.component:leftVentricularEjectionFraction",
-        "path": "Observation.component",
-        "sliceName": "leftVentricularEjectionFraction",
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:leftVentricularEjectionFraction.code.coding",
-        "path": "Observation.component.code.coding",
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
         "slicing": {
           "discriminator": [
             {
@@ -149,44 +152,26 @@
         "min": 1
       },
       {
-        "id": "Observation.component:leftVentricularEjectionFraction.code.coding:loincCode",
-        "path": "Observation.component.code.coding",
-        "sliceName": "loincCode",
+        "id": "Observation.value[x].coding:snomedCode",
+        "path": "Observation.value[x].coding",
+        "sliceName": "snomedCode",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"
+        }
       },
       {
-        "id": "Observation.component:leftVentricularEjectionFraction.code.coding:loincCode.system",
-        "path": "Observation.component.code.coding.system",
+        "id": "Observation.value[x].coding:snomedCode.system",
+        "path": "Observation.value[x].coding.system",
         "min": 1,
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "http://snomed.info/sct"
       },
       {
-        "id": "Observation.component:leftVentricularEjectionFraction.code.coding:loincCode.code",
-        "path": "Observation.component.code.coding.code",
-        "min": 1,
-        "fixedCode": "8806-2"
-      },
-      {
-        "id": "Observation.component:leftVentricularEjectionFraction.value[x]",
-        "path": "Observation.component.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:leftVentricularEjectionFraction.value[x].value",
-        "path": "Observation.component.value[x].value",
+        "id": "Observation.value[x].coding:snomedCode.code",
+        "path": "Observation.value[x].coding.code",
         "min": 1
-      },
-      {
-        "id": "Observation.component:leftVentricularEjectionFraction.value[x].unit",
-        "path": "Observation.component.value[x].unit",
-        "min": 1,
-        "fixedString": "%"
       }
     ]
   }

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Condition",
-  "name": "Condition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Condition",
+  "name": "DT4H_Condition",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -11,11 +11,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Condition.clinicalStatus",
-        "path": "Condition.clinicalStatus",
-        "min": 1
-      },
       {
         "id": "Condition.clinicalStatus.coding",
         "path": "Condition.clinicalStatus.coding",
@@ -100,7 +95,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]

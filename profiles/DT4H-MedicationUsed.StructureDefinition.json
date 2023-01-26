@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/MedicationUsed",
-  "name": "MedicationUsed",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-MedicationUsed",
+  "name": "DT4H_MedicationUsed",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -68,7 +68,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]

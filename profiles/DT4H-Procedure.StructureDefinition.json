@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/Procedure",
-  "name": "Procedure",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Procedure",
+  "name": "DT4H_Procedure",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -94,7 +94,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]

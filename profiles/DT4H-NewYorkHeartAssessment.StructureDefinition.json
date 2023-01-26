@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/NewYorkHeartAssessment",
-  "name": "NewYorkHeartAssessment",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-NewYorkHeartAssessment",
+  "name": "DT4H_NewYorkHeartAssessment",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -95,7 +95,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/Patient"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
         ]
