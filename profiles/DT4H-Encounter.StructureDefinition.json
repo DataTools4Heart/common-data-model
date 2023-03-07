@@ -13,14 +13,12 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter.class.system",
-        "path": "Encounter.class.system",
-        "min": 1
-      },
-      {
-        "id": "Encounter.class.code",
-        "path": "Encounter.class.code",
-        "min": 1
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        }
       },
       {
         "id": "Encounter.subject",
