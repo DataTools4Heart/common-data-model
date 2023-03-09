@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vital-signs",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/vital_signs",
+  "version": "0.1",
+  "name": "DataTools4Heart Vital Signs",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for vital signs",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "29463-7",
+            "display": "Body weight"
+          },
+          {
+            "code": "8302-2",
+            "display": "Body height"
+          },
+          {
+            "code": "39156-5",
+            "display": "Body mass index (BMI) [Ratio]"
+          },
+          {
+            "code": "8480-6",
+            "display": "Systolic blood pressure"
+          },
+          {
+            "code": "8462-4",
+            "display": "Diastolic blood pressure"
+          },
+          {
+            "code": "8867-4",
+            "display": "Heart rate"
+          }
+        ]
+      }
+    ]
+  }
+}

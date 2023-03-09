@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "symptoms",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/symptoms",
+  "version": "0.1",
+  "name": "DataTools4Heart Symptoms",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for symptoms",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "84229001",
+            "display": "Fatigue"
+          },
+          {
+            "code": "267036007",
+            "display": "Dyspnea"
+          },
+          {
+            "code": "267038008",
+            "display": "Edema"
+          },
+          {
+            "code": "60046008",
+            "display": "Pleural effusion"
+          }
+        ]
+      }
+    ]
+  }
+}

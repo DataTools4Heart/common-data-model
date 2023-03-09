@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "lab-result-codes",
-  "url": "https://datatools4heart.eu/fhir/ValueSet/lab-result-codes",
+  "id": "lab-codes",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/lab-codes",
   "version": "0.1",
   "name": "DataTools4Heart Lab Result Codes",
   "status": "draft",
@@ -125,14 +125,9 @@
           {
             "code": "4548-4",
             "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
-          }
-        ]
-      },
-      {
-        "system": "https://datatools4heart.eu/fhir/ValueSet/lab-result-codes",
-        "concept": [
+          },
           {
-            "code": "hba1c-ratio-in-blood",
+            "code": "41995-2",
             "display": "Hemoglobin [Mass/volume] in Blood"
           }
         ]

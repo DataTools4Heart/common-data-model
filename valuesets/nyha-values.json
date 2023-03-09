@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nyha-values",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/nyha-values",
+  "version": "0.1",
+  "name": "DataTools4Heart New York Heart Assessment Values",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    }
+  ],
+  "description": "Values for New York Heart Assessment",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://loinc.org/LL4734-1",
+        "concept": [
+          {
+            "code": "I",
+            "display": "Class-I"
+          },
+          {
+            "code": "II",
+            "display": "Class-II"
+          },
+          {
+            "code": "III",
+            "display": "Class-III"
+          },
+          {
+            "code": "IV",
+            "display": "Class-IV"
+          }
+        ]
+      }
+    ]
+  }
+}
