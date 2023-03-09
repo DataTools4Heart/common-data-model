@@ -86,7 +86,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://datatools4heart.eu/fhir/value-sets/vital-signs"
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/vital_signs"
         }
       },
       {
@@ -94,11 +94,6 @@
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://loinc.org"
-      },
-      {
-        "id": "Observation.code.coding:loincCode.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -112,11 +107,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
       },
       {
         "id": "Observation.effective[x]",

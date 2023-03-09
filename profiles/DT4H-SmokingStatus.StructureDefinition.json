@@ -85,8 +85,8 @@
       {
         "id": "Observation.code.coding:loincCode.code",
         "path": "Observation.code.coding.code",
-        "label": "72166-2",
-        "min": 1
+        "min": 1,
+        "fixedCode": "72166-2"
       },
       {
         "id": "Observation.subject",
@@ -96,19 +96,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1,
-        "type": [
-          {
-            "code": "string",
-            "profile": [
               "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient"
             ]
           }
@@ -159,7 +146,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/smoking-status"
         }
       },
       {
@@ -167,11 +154,6 @@
         "path": "Observation.value[x].coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.value[x].coding:snomedCode.code",
-        "path": "Observation.value[x].coding.code",
-        "min": 1
       }
     ]
   }

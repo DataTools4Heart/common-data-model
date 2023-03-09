@@ -101,9 +101,16 @@
         ]
       },
       {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Encounter"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.effective[x]",

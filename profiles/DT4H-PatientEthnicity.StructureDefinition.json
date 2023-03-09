@@ -10,7 +10,7 @@
       "valueInteger": 1
     }
   ],
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient-Ethnicity",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-PatientEthnicity",
   "version": "4.0.1",
   "name": "DT4H_Patient_Ethnicity",
   "title": "ethnicity",
@@ -59,26 +59,26 @@
         "min": 0
       },
       {
-        "id": "Extension.extension:value",
+        "id": "Extension.extension:ethnicity",
         "path": "Extension.extension",
-        "sliceName": "value",
+        "sliceName": "ethnicity",
         "short": "Ethnicity",
         "definition": "Ethnicity of a patient.",
         "min": 0,
         "max": "1"
       },
       {
-        "id": "Extension.extension:value.url",
+        "id": "Extension.extension:ethnicity.url",
         "path": "Extension.extension.url",
         "type": [
           {
             "code": "uri"
           }
         ],
-        "fixedUri": "value"
+        "fixedUri": "ethnicity"
       },
       {
-        "id": "Extension.extension:value.value[x]",
+        "id": "Extension.extension:ethnicity.value[x]",
         "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
@@ -90,7 +90,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Patient-Ethnicity"
+        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-PatientEthnicity"
       },
       {
         "id": "Extension.value[x]",

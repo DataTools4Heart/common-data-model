@@ -29,11 +29,6 @@
         ]
       },
       {
-        "id": "ServiceRequest.subject.reference",
-        "path": "ServiceRequest.subject.reference",
-        "min": 1
-      },
-      {
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
         "type": [

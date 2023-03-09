@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition//DT4H-BloodSpeciment",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-BloodSpecimen",
   "name": "DT4H_BloodSpecimen",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -31,27 +31,22 @@
         "min": 1
       },
       {
-        "id": "Specimen.type.coding:sliceCoding",
+        "id": "Specimen.type.coding:fhirCode",
         "path": "Specimen.type.coding",
-        "sliceName": "sliceCoding",
+        "sliceName": "fhirCode",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "description": "Type of the blood specimen",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/blood-specimen-types"
+        }
       },
       {
-        "id": "Specimen.type.coding:sliceCoding.system",
+        "id": "Specimen.type.coding:fhirCode.system",
         "path": "Specimen.type.coding.system",
         "min": 1,
         "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0487"
-      },
-      {
-        "id": "Specimen.type.coding:sliceCoding.code",
-        "path": "Specimen.type.coding.code",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "description": "Coded value for the blood speciment",
-          "valueSet": "https://datatools4heart.eu/fhir/value-sets/blood-speciment-types"
-        }
       }
     ]
   }

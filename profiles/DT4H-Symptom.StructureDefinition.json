@@ -28,7 +28,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.code.coding:snomedCode",
@@ -38,7 +39,7 @@
         "max": "1",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://datatools4heart.eu/fhir/value-sets/symptoms"
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/symptoms"
         }
       },
       {
@@ -46,11 +47,6 @@
         "path": "Observation.code.coding.system",
         "min": 1,
         "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.code.coding:snomedCode.code",
-        "path": "Observation.code.coding.code",
-        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -64,11 +60,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
       },
       {
         "id": "Observation.effective[x]",

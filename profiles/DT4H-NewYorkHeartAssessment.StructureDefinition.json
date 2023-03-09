@@ -101,11 +101,6 @@
         ]
       },
       {
-        "id": "Observation.subject.reference",
-        "path": "Observation.subject.reference",
-        "min": 1
-      },
-      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "min": 1,
@@ -147,19 +142,14 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://loinc.org/LL4734-1/"
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/nyha-values"
         }
       },
       {
         "id": "Observation.value[x].coding:loincCode.system",
         "path": "Observation.value[x].coding.system",
         "min": 1,
-        "fixedUri": "https://loinc.org/LL4734-1/"
-      },
-      {
-        "id": "Observation.value[x].coding:loincCode.code",
-        "path": "Observation.value[x].coding.code",
-        "min": 1
+        "fixedUri": "http://loinc.org"
       }
     ]
   }

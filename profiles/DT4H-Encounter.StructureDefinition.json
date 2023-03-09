@@ -17,8 +17,14 @@
         "path": "Encounter.class",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-classes"
         }
+      },
+      {
+        "id": "Encounter.class.system",
+        "path": "Encounter.class.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
       },
       {
         "id": "Encounter.subject",
@@ -32,11 +38,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Encounter.subject.reference",
-        "path": "Encounter.subject.reference",
-        "min": 1
       },
       {
         "id": "Encounter.period",
