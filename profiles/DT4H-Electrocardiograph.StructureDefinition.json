@@ -329,7 +329,7 @@
         "id": "Observation.component:qrsDuration.code.coding:loincCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "8625-6"
+        "fixedCode": "8633-0"
       },
       {
         "id": "Observation.component:qrsDuration.value[x]",
