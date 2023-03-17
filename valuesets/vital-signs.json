@@ -49,6 +49,10 @@
           {
             "code": "8867-4",
             "display": "Heart rate"
+          },
+          {
+            "code": "2708-6",
+            "display": "Oxygen saturation in Arterial blood"
           }
         ]
       }
