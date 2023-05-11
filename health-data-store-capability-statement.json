@@ -2052,6 +2052,9 @@
         {
           "type": "MedicationAdministration",
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+          "supportedProfile": [
+            "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-MedicationAdministration"
+          ],
           "interaction": [
             {
               "code": "read",
@@ -2188,9 +2191,6 @@
         {
           "type": "MedicationStatement",
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
-          "supportedProfile": [
-            "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-MedicationUsed"
-          ],
           "interaction": [
             {
               "code": "read",
