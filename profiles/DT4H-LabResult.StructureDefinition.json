@@ -102,6 +102,7 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
