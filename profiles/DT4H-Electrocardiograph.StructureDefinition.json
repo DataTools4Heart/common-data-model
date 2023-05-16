@@ -97,6 +97,7 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -848,6 +849,606 @@
         "type": [
           {
             "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadI",
+        "path": "Observation.component",
+        "sliceName": "leadI"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "I"
+      },
+      {
+        "id": "Observation.component:leadI.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead I",
+        "definition": "Raw data for lead I represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadII",
+        "path": "Observation.component",
+        "sliceName": "leadII"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "II"
+      },
+      {
+        "id": "Observation.component:leadII.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead II",
+        "definition": "Raw data for lead II represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadIII",
+        "path": "Observation.component",
+        "sliceName": "leadIII"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "III"
+      },
+      {
+        "id": "Observation.component:leadIII.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead III",
+        "definition": "Raw data for lead III represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVR",
+        "path": "Observation.component",
+        "sliceName": "leadAVR"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "aVR"
+      },
+      {
+        "id": "Observation.component:leadAVR.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVR",
+        "definition": "Raw data for lead aVR represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVL",
+        "path": "Observation.component",
+        "sliceName": "leadAVL"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "aVL"
+      },
+      {
+        "id": "Observation.component:leadAVL.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVL",
+        "definition": "Raw data for lead aVL represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVF",
+        "path": "Observation.component",
+        "sliceName": "leadAVF"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "aVF"
+      },
+      {
+        "id": "Observation.component:leadAVF.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVF",
+        "definition": "Raw data for lead aVF represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV1",
+        "path": "Observation.component",
+        "sliceName": "leadV1"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V1"
+      },
+      {
+        "id": "Observation.component:leadV1.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V1",
+        "definition": "Raw data for lead V1 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV2",
+        "path": "Observation.component",
+        "sliceName": "leadV2"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V2"
+      },
+      {
+        "id": "Observation.component:leadV2.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V2",
+        "definition": "Raw data for lead V2 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV3",
+        "path": "Observation.component",
+        "sliceName": "leadV3"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V3"
+      },
+      {
+        "id": "Observation.component:leadV3.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V3",
+        "definition": "Raw data for lead V3 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV4",
+        "path": "Observation.component",
+        "sliceName": "leadV4"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V4"
+      },
+      {
+        "id": "Observation.component:leadV4.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V4",
+        "definition": "Raw data for lead V4 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV5",
+        "path": "Observation.component",
+        "sliceName": "leadV5"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V5"
+      },
+      {
+        "id": "Observation.component:leadV5.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V5",
+        "definition": "Raw data for lead V5 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV6",
+        "path": "Observation.component",
+        "sliceName": "leadV6"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:dt4hLeadCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "dt4hLeadCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:dt4hLeadCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:dt4hLeadCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "V6"
+      },
+      {
+        "id": "Observation.component:leadV6.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V6",
+        "definition": "Raw data for lead V6 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
           }
         ]
       }

@@ -70,6 +70,24 @@
         ]
       },
       {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.context.reference",
+        "path": "MedicationAdministration.context.reference",
+        "min": 1
+      },
+      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
         "type": [
