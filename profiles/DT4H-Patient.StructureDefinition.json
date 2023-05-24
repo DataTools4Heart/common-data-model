@@ -36,11 +36,21 @@
           {
             "code": "Extension",
             "profile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-PatientEthnicity"
+              "http://hl7.org/fhir/StructureDefinition/patient-ethnicity"
             ]
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.extension:ethnicity.value[x]",
+        "path": "Patient.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "id": "Patient.gender",
