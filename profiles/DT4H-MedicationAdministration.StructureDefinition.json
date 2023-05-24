@@ -77,7 +77,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter"
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Encounter"
             ]
           }
         ]
