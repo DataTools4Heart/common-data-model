@@ -103,7 +103,15 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/DT4H-Encounter"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.effective[x]",

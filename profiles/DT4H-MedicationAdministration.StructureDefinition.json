@@ -83,11 +83,6 @@
         ]
       },
       {
-        "id": "MedicationAdministration.context.reference",
-        "path": "MedicationAdministration.context.reference",
-        "min": 1
-      },
-      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
         "type": [
