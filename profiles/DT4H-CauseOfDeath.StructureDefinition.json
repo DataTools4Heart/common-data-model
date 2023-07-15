@@ -69,6 +69,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
@@ -78,6 +79,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"

@@ -12,6 +12,11 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "fixedCode": "completed"
+      },
+      {
         "id": "Procedure.category.coding",
         "path": "Procedure.category.coding",
         "slicing": {
@@ -66,21 +71,22 @@
         "min": 1
       },
       {
-        "id": "Procedure.code.coding:snomedCode",
+        "id": "Procedure.code.coding:icdCode",
         "path": "Procedure.code.coding",
-        "sliceName": "snomedCode",
+        "sliceName": "icdCode",
         "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/procedures"
-        }
+        "max": "1"
       },
       {
-        "id": "Procedure.code.coding:snomedCode.system",
+        "id": "Procedure.code.coding:icdCode.system",
         "path": "Procedure.code.coding.system",
         "min": 1,
-        "fixedUri": "http://snomed.info/sct"
+        "fixedUri": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "id": "Procedure.code.coding:icdCode.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1
       },
       {
         "id": "Procedure.subject",

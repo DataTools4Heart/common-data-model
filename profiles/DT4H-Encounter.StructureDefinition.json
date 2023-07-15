@@ -16,15 +16,19 @@
         "id": "Encounter.class",
         "path": "Encounter.class",
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-classes"
         }
       },
       {
         "id": "Encounter.class.system",
         "path": "Encounter.class.system",
-        "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        "min": 1
+      },
+      {
+        "id": "Encounter.class.code",
+        "path": "Encounter.class.code",
+        "min": 1
       },
       {
         "id": "Encounter.subject",
@@ -45,13 +49,39 @@
         "min": 1
       },
       {
-        "id": "Encounter.reasonCode.coding.system",
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "min": 1
+      },
+      {
+        "id": "Encounter.reasonCode.coding",
+        "path": "Encounter.reasonCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Encounter.reasonCode.coding:icd10code",
+        "path": "Encounter.reasonCode.coding",
+        "sliceName": "icd10code",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reasonCode.coding:icd10code.system",
         "path": "Encounter.reasonCode.coding.system",
         "min": 1,
         "fixedUri": "http://hl7.org/fhir/sid/icd-10"
       },
       {
-        "id": "Encounter.reasonCode.coding.code",
+        "id": "Encounter.reasonCode.coding:icd10code.code",
         "path": "Encounter.reasonCode.coding.code",
         "min": 1
       },

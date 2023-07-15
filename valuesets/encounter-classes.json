@@ -39,6 +39,15 @@
             "display": "inpatient encounter"
           }
         ]
+      },
+      {
+        "system": "https://datatools4heart.eu/fhir/CodeSystem/encounter-classes",
+        "concept": [
+          {
+            "code": "EMAMB",
+            "display": "emergency followed by hospitalization"
+          }
+        ]
       }
     ]
   }
