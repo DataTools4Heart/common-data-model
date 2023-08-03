@@ -27,19 +27,19 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "I",
+            "code": "LA28404-4",
             "display": "Class-I"
           },
           {
-            "code": "II",
+            "code": "LA28405-1",
             "display": "Class-II"
           },
           {
-            "code": "III",
+            "code": "LA28406-9",
             "display": "Class-III"
           },
           {
-            "code": "IV",
+            "code": "LA28407-7",
             "display": "Class-IV"
           }
         ]
