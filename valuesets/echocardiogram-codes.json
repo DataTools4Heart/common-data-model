@@ -95,6 +95,10 @@
             "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW"
           },
           {
+            "code": "79911-4",
+            "display": "Mitral valve medial annulus Tissue velocity.E-wave.max by US.tissue doppler.A4C"
+          },
+          {
             "code": "59129-7",
             "display": "Left ventricular E-wave/A-wave by US"
           },

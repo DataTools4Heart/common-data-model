@@ -97,7 +97,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Observation.value[x].coding:icd10Code",

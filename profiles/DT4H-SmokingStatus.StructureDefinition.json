@@ -119,6 +119,14 @@
             "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/smoking-status"
+        }
       }
     ]
   }
