@@ -882,13 +882,13 @@
         "id": "Observation.component:leadI.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadI.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "I"
+        "fixedCode": "LP7386-8"
       },
       {
         "id": "Observation.component:leadI.value[x]",
@@ -932,13 +932,13 @@
         "id": "Observation.component:leadII.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadII.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "II"
+        "fixedCode": "LP7387-6"
       },
       {
         "id": "Observation.component:leadII.value[x]",
@@ -982,13 +982,13 @@
         "id": "Observation.component:leadIII.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadIII.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "III"
+        "fixedCode": "LP7388-4"
       },
       {
         "id": "Observation.component:leadIII.value[x]",
@@ -1032,13 +1032,13 @@
         "id": "Observation.component:leadAVR.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadAVR.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "aVR"
+        "fixedCode": "LP7385-0"
       },
       {
         "id": "Observation.component:leadAVR.value[x]",
@@ -1082,13 +1082,13 @@
         "id": "Observation.component:leadAVL.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadAVL.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "aVL"
+        "fixedCode": "LP7384-3"
       },
       {
         "id": "Observation.component:leadAVL.value[x]",
@@ -1132,13 +1132,13 @@
         "id": "Observation.component:leadAVF.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadAVF.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "aVF"
+        "fixedCode": "LP7383-5"
       },
       {
         "id": "Observation.component:leadAVF.value[x]",
@@ -1182,13 +1182,13 @@
         "id": "Observation.component:leadV1.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV1.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V1"
+        "fixedCode": "LP7389-2"
       },
       {
         "id": "Observation.component:leadV1.value[x]",
@@ -1232,13 +1232,13 @@
         "id": "Observation.component:leadV2.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV2.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V2"
+        "fixedCode": "LP7390-0"
       },
       {
         "id": "Observation.component:leadV2.value[x]",
@@ -1282,13 +1282,13 @@
         "id": "Observation.component:leadV3.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV3.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V3"
+        "fixedCode": "LP7391-8"
       },
       {
         "id": "Observation.component:leadV3.value[x]",
@@ -1332,13 +1332,13 @@
         "id": "Observation.component:leadV4.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV4.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V4"
+        "fixedCode": "LP7392-6"
       },
       {
         "id": "Observation.component:leadV4.value[x]",
@@ -1382,13 +1382,13 @@
         "id": "Observation.component:leadV5.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV5.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V5"
+        "fixedCode": "LP7393-4"
       },
       {
         "id": "Observation.component:leadV5.value[x]",
@@ -1432,13 +1432,13 @@
         "id": "Observation.component:leadV6.code.coding:dt4hLeadCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-12-lead-codes"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:leadV6.code.coding:dt4hLeadCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "V6"
+        "fixedCode": "LP7394-2"
       },
       {
         "id": "Observation.component:leadV6.value[x]",
