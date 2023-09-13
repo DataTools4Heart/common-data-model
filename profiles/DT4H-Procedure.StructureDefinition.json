@@ -17,41 +17,6 @@
         "fixedCode": "completed"
       },
       {
-        "id": "Procedure.category.coding",
-        "path": "Procedure.category.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Procedure.category.coding:snomedCode",
-        "path": "Procedure.category.coding",
-        "sliceName": "snomedCode",
-        "min": 1,
-        "max": "1",
-        "binding": {
-          "strength": "extensible",
-          "valueSet": "https://datatools4heart.eu/fhir/value-sets/procedure-categories"
-        }
-      },
-      {
-        "id": "Procedure.category.coding:snomedCode.system",
-        "path": "Procedure.category.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Procedure.category.coding:snomedCode.code",
-        "path": "Procedure.category.coding.code",
-        "min": 1
-      },
-      {
         "id": "Procedure.code",
         "path": "Procedure.code",
         "min": 1
@@ -81,7 +46,7 @@
         "id": "Procedure.code.coding:icdCode.system",
         "path": "Procedure.code.coding.system",
         "min": 1,
-        "fixedUri": "http://hl7.org/fhir/sid/icd-10"
+        "fixedUri": "http://hl7.org/fhir/sid/icd-10-pcs"
       },
       {
         "id": "Procedure.code.coding:icdCode.code",
