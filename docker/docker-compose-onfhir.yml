@@ -26,7 +26,7 @@ services:
       mongo:
         condition: service_healthy
     environment:
-      - APP_CONF_FILE=/usr/local/onfhir/docker/conf/onfhir-docker.conf
+      - APP_CONF_FILE=/usr/local/onfhir/conf/docker/onfhir-docker.conf
       - FHIR_ROOT_URL=http://127.0.0.1:8080/fhir
       - DB_EMBEDDED=false
       - DB_HOST=mongo:27017
