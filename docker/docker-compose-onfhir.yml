@@ -35,7 +35,7 @@ services:
     networks:
       - onfhir-network
     volumes:
-      - ../../common-data-model:/usr/local/onfhir/conf
+      - ./common-data-model:/usr/local/onfhir/conf
 networks:
   onfhir-network:
     name: onfhir-network
