@@ -1,6 +1,5 @@
 *.jar
 *.bat
-*.sh
 onfhir.conf
 logs/*
 .idea/
