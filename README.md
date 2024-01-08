@@ -1,19 +1,18 @@
 # Common Data Model For Heart Failure Research
 
-<div style="display: flex; align-items: center; gap: 30px; justify-content: center; width: 100%">
-  <div style="padding: 5px">
-    <a href="https://www.datatools4heart.eu/">
-      <img height="60px" src="readme-assets/dt4h_logo_color.svg" alt="DataTools4Heart Project"/>
-    </a>
-  </div>
-  <div style="padding: 5px">
-     <a href="https://www.ai4hf.com/">
-      <img height="60px" src="readme-assets/ai4hf_logo.svg" alt="AI4HF Project"/>
-      </a>
-  </div>
+<div align="center" style="background-color: white">
+  <a href="https://www.datatools4heart.eu/">
+    <img height="60px" src="readme-assets/dt4h_logo_color.svg" alt="DataTools4Heart Project"/>
+  </a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://www.ai4hf.com/">
+    <img height="60px" src="readme-assets/ai4hf_logo.svg" alt="AI4HF Project"/>
+  </a>
 </div>
 
-<p>
+<br/>
+
+<p align="center">
   <a href="https://github.com/DataTools4Heart/common-data-model">
     <img src="https://img.shields.io/github/license/DataTools4Heart/common-data-model" alt="License">
   </a>
@@ -21,6 +20,8 @@
     <img src="https://img.shields.io/github/v/release/DataTools4Heart/common-data-model" alt="Releases">
   </a>
 </p>
+
+<br/>
 
 This repository includes the FHIR profile definitions, code systems and value sets which constitute the Common Health
 Data Model
@@ -52,6 +53,8 @@ would like to restrict possible values with the four pre-defined classes: I, II,
 
 ### Code systems
 
-Code systems are a group of codes defined in the scope of DT4H & AI4HF projects for coded representation of particular concepts.
-For instance, we have defined a code system containing coded values for some echocardiogram measurements that do not have a
+Code systems are a group of codes defined in the scope of DT4H & AI4HF projects for coded representation of particular
+concepts.
+For instance, we have defined a code system containing coded values for some echocardiogram measurements that do not
+have a
 corresponding code in the available standard-based terminology systems, such as LOINC.
