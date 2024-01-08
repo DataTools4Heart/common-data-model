@@ -1,0 +1,86 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ecg-parameter",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter",
+  "version": "1.0",
+  "name": "ECG panel parameters",
+  "title": "ECG panel parameters",
+  "status": "draft",
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "List of ECG panel parameters that are not defined by LOINC.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AtrialRate",
+      "display": "Atrial Rate",
+      "definition": "Atrial heart rate."
+    },
+    {
+      "code": "VentricularRate",
+      "display": "Ventricular Rate",
+      "definition": "Ventricular heard rate."
+    },
+    {
+      "code": "SamplingFrequency",
+      "display": "Sampling Frequency",
+      "definition": "Sampling frequency."
+    },
+    {
+      "code": "RawMedianBeat",
+      "display": "Raw Median Beat",
+      "definition": "Raw median beat."
+    },
+    {
+      "code": "RawRhythm",
+      "display": "Raw Rhythm",
+      "definition": "Raw rhythm."
+    },
+    {
+      "code": "PacedRhythm",
+      "display": "Paced Rhythm",
+      "definition": "Paced rhythm."
+    },
+    {
+      "code": "ECGFilterSettings",
+      "display": "ECG Filter Settings",
+      "definition": "ECG filter settings."
+    },
+    {
+      "code": "ECG-AF",
+      "display": "Has Atrial Fibrillation",
+      "definition": "An indicator whether or not atrial fibrillation is observed in ECG."
+    },
+    {
+      "code": "ECG-LBBB",
+      "display": "Has LBBB (Left Bundle Branch Block)",
+      "definition": "A boolean indicator whether or not Left Bundle Branch Block (LBBB) is observed in ECG."
+    },
+    {
+      "code": "ECG-RBBB",
+      "display": "Has RBBB (Right Bundle Branch Block)",
+      "definition": "A boolean indicator whether or not Right Bundle Branch Block (RBBB) is observed in ECG."
+    }
+  ]
+}

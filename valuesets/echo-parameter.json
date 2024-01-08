@@ -1,0 +1,178 @@
+{
+  "resourceType": "ValueSet",
+  "id": "echo-parameter",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/echo-parameter",
+  "version": "1.0",
+  "name": "EchocardiogramParameter",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Echocardiogram metric codes used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8806-2",
+            "display": "Left ventricular Ejection fraction by 2D echo"
+          },
+          {
+            "code": "3193-3",
+            "display": "Body surface area Measured"
+          },
+          {
+            "code": "75988-6",
+            "display": "Left ventricular End diastolic volume"
+          },
+          {
+            "code": "79997-3",
+            "display": "End-diastolic volume/Body surface area"
+          },
+          {
+            "code": "75989-4",
+            "display": "Left ventricular End systolic volume"
+          },
+          {
+            "code": "80002-9",
+            "display": "End-systolic volume/Body surface area"
+          },
+          {
+            "code": "18083-6",
+            "display": "Left ventricular Internal diameter minor axis diastole by US 2D"
+          },
+          {
+            "code": "18085-1",
+            "display": "Left ventricular Internal diameter minor axis systole by US 2D"
+          },
+          {
+            "code": "10231-9",
+            "display": "Right ventricular Ejection fraction"
+          },
+          {
+            "code": "79969-2",
+            "display": "Interventricular septum Thickness at end diastole by US 2D"
+          },
+          {
+            "code": "79971-8",
+            "display": "Interventricular septum thickness at end systole by US 2D"
+          },
+          {
+            "code": "99528-2",
+            "display": "Thickness [Length] of Interventricular septum"
+          },
+          {
+            "code": "80032-6",
+            "display": "Left ventricular posterior wall Thickness at end diastole by US 2D"
+          },
+          {
+            "code": "80034-2",
+            "display": "Left ventricular posterior wall Thickness at end systole by US 2D"
+          },
+          {
+            "code": "18155-2",
+            "display": "Left ventricular Thickness septal wall/Thickness posterior wall by US"
+          },
+          {
+            "code": "29440-5",
+            "display": "Left ventricular Thickness septal wall/Thickness posterior wall by US 2D"
+          },
+          {
+            "code": "79915-5",
+            "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW"
+          },
+          {
+            "code": "79911-4",
+            "display": "Mitral valve medial annulus Tissue velocity.E-wave.max by US.tissue doppler.A4C"
+          },
+          {
+            "code": "59129-7",
+            "display": "Left ventricular E-wave/A-wave by US"
+          },
+          {
+            "code": "78190-6",
+            "display": "Mitral valve lateral annulus E-wave/Tissue velocity.E-wave.max by US.doppler+tissue doppler"
+          },
+          {
+            "code": "77903-3",
+            "display": "Tricuspid valve annulus Excursion distance during systole by US.M-mode"
+          },
+          {
+            "code": "11712-7",
+            "display": "Tricuspid valve Peak systolic flow velocity by US.doppler"
+          },
+          {
+            "code": "77904-1",
+            "display": "US.2D+Calculated by modified Simpson method"
+          },
+          {
+            "code": "77906-6",
+            "display": "US.2D+Calculated by modified Simpson method"
+          },
+          {
+            "code": "17977-0",
+            "display": "Left atrial Area by US.2D.A4C"
+          },
+          {
+            "code": "29468-6",
+            "display": "Left atrial Diameter anterior-posterior systole by US 2D"
+          },
+          {
+            "code": "93635-1",
+            "display": "Right atrial End-systolic volume by US.2D.A4C"
+          },
+          {
+            "code": "80075-5",
+            "display": "Right atrial Area at end systole by US.2D.A4C+Measured by planimetry"
+          },
+          {
+            "code": "18170-1",
+            "display": "Left ventricular outflow tract Blood velocity-time integral by US.doppler"
+          },
+          {
+            "code": "82337-7",
+            "display": "Right atrial Intrachamber pressure estimated by US"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "134401001",
+            "display": "Left ventricular cardiac dysfunction"
+          },
+          {
+            "code": "395704004",
+            "display": "Left ventricular diastolic dysfunction"
+          }
+        ]
+      },
+      {
+        "system": "https://datatools4heart.eu/fhir/CodeSystem/echo-parameter"
+      }
+    ]
+  }
+}

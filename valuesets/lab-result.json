@@ -1,0 +1,146 @@
+{
+  "resourceType": "ValueSet",
+  "id": "lab-result",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/lab-result",
+  "version": "1.0",
+  "name": "LabResult",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-02",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Lab result codes used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "2276-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2502-3",
+            "display": "Iron saturation [Mass Fraction] in Serum or Plasma"
+          },
+          {
+            "code": "33762-6",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30934-4",
+            "display": "Natriuretic peptide B [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1988-5",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30522-7",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "89579-7",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "10839-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "67151-1",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "6598-7",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14927-8",
+            "display": "Triglyceride [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14647-2",
+            "display": "Cholesterol [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14646-4",
+            "display": "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "22748-8",
+            "display": " Cholesterol in LDL [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2823-3",
+            "display": "Potassium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2951-2",
+            "display": "Sodium [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2160-0",
+            "display": "Creatinine [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2161-8",
+            "display": "Creatinine [Mass/volume] in Urine"
+          },
+          {
+            "code": "1751-7",
+            "display": "Albumin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1754-1",
+            "display": "Albumin [Mass/volume] in Urine"
+          },
+          {
+            "code": "69405-9",
+            "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
+          },
+          {
+            "code": "14937-7",
+            "display": "Urea nitrogen [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "32294-1",
+            "display": "Albumin/Creatinine [Ratio] in Urine"
+          },
+          {
+            "code": "4548-4",
+            "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+          },
+          {
+            "code": "41995-2",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          }
+        ]
+      }
+    ]
+  }
+}

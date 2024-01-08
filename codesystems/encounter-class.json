@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "encounter-class",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/encounter-class",
+  "version": "1.0",
+  "name": "EncounterClass",
+  "title": "DataTools4Heart Encounter classes",
+  "status": "draft",
+  "date": "2023-05-16",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Encounter classes that are not defined in HL7",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "EMAMB",
+      "display": "Emergency followed by hospitalization",
+      "definition": "Emergency followed by hospitalization"
+    }
+  ]
+}

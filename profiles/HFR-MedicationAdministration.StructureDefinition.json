@@ -1,0 +1,81 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-MedicationAdministration",
+  "name": "HFR_MedicationAdministration",
+  "status": "draft",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.medication.concept.coding",
+        "path": "MedicationAdministration.medication.concept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCode",
+        "path": "MedicationAdministration.medication.concept.coding",
+        "sliceName": "atcCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCode.system",
+        "path": "MedicationAdministration.medication.concept.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.whocc.no/atc"
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCode.code",
+        "path": "MedicationAdministration.medication.concept.coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.encounter",
+        "path": "MedicationAdministration.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.occurence[x]",
+        "path": "MedicationAdministration.occurence[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

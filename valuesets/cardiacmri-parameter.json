@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cardiacmri-parameter",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/cardiacmri-parameter",
+  "version": "1.0",
+  "name": "CardiacMRIParamater",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Parameters/metrics used in Cardiac MRI, both for machine configuration and imaging results.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://datatools4heart.eu/fhir/CodeSystem/cardiacmri-parameter"
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "8821-1",
+            "display": "Left ventricular End-diastolic volume by Imaging"
+          },
+          {
+            "code": "8823-7",
+            "display": "Left ventricular End-systolic volume by Imaging"
+          },
+          {
+            "code": "8822-9",
+            "display": "Right ventricular End-diastolic volume by Imaging"
+          },
+          {
+            "code": "8824-5",
+            "display": "Right ventricular End-systolic volume by Imaging"
+          },
+          {
+            "code": "8818-7",
+            "display": "Right ventricular Ejection fraction by MR"
+          }
+        ]
+      }
+    ]
+  }
+}

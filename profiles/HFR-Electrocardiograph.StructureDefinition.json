@@ -1,0 +1,1913 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Electrocardiograph",
+  "name": "HFR_Electrocardiograph",
+  "status": "draft",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-VitalSign",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding:loincCode",
+        "path": "Observation.code.coding",
+        "sliceName": "loincCode"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "34534-8"
+      },
+      {
+        "id": "Observation.code.coding:loincCode.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "fixedString": "12 lead EKG panel"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.system"
+            },
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsDuration",
+        "path": "Observation.component",
+        "sliceName": "qrsDuration",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qrsDuration.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8633-0"
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "millisecond"
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:qrsDuration.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "ms"
+      },
+      {
+        "id": "Observation.component:rAxis",
+        "path": "Observation.component",
+        "sliceName": "rAxis"
+      },
+      {
+        "id": "Observation.component:rAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:rAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8632-2"
+      },
+      {
+        "id": "Observation.component:rAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "degree"
+      },
+      {
+        "id": "Observation.component:rAxis.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:rAxis.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "deg"
+      },
+      {
+        "id": "Observation.component:pAxis",
+        "path": "Observation.component",
+        "sliceName": "pAxis"
+      },
+      {
+        "id": "Observation.component:pAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:pAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8626-4"
+      },
+      {
+        "id": "Observation.component:pAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:pAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "degree"
+      },
+      {
+        "id": "Observation.component:pAxis.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:pAxis.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "deg"
+      },
+      {
+        "id": "Observation.component:tAxis",
+        "path": "Observation.component",
+        "sliceName": "tAxis"
+      },
+      {
+        "id": "Observation.component:tAxis.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:tAxis.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:tAxis.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:tAxis.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8638-9"
+      },
+      {
+        "id": "Observation.component:tAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:tAxis.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:tAxis.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "degree"
+      },
+      {
+        "id": "Observation.component:tAxis.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:tAxis.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "deg"
+      },
+      {
+        "id": "Observation.component:qtInterval",
+        "path": "Observation.component",
+        "sliceName": "qtInterval",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qtInterval.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8634-8"
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "millisecond"
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:qtInterval.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "ms"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected",
+        "path": "Observation.component",
+        "sliceName": "qtIntervalCorrected",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8636-3"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].extension:hFRQTIntervalCorrectionFormula",
+        "path": "Observation.component.value[x].extension",
+        "sliceName": "hFRQTIntervalCorrectionFormula",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-QTIntervalCorrectionFormula"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "millisecond"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrected.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "ms"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount",
+        "path": "Observation.component",
+        "sliceName": "qrsComplexCount"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8897-1"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "Count"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:qrsComplexCount.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "{Count}"
+      },
+      {
+        "id": "Observation.component:prInterval",
+        "path": "Observation.component",
+        "sliceName": "prInterval",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:prInterval.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "8625-6"
+      },
+      {
+        "id": "Observation.component:prInterval.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "millisecond"
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:prInterval.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "ms"
+      },
+      {
+        "id": "Observation.component:atrialRate",
+        "path": "Observation.component",
+        "sliceName": "atrialRate",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:atrialRate.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:atrialRate.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:atrialRate.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:atrialRate.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "AtrialRate"
+      },
+      {
+        "id": "Observation.component:atrialRate.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:atrialRate.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:atrialRate.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "heart beats per minute"
+      },
+      {
+        "id": "Observation.component:atrialRate.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:atrialRate.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "{beats}/min"
+      },
+      {
+        "id": "Observation.component:ventricularRate",
+        "path": "Observation.component",
+        "sliceName": "ventricularRate",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ventricularRate.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:ventricularRate.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ventricularRate.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:ventricularRate.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "VentricularRate"
+      },
+      {
+        "id": "Observation.component:ventricularRate.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ventricularRate.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:ventricularRate.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "heart beats per minute"
+      },
+      {
+        "id": "Observation.component:ventricularRate.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:ventricularRate.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "{beats}/min"
+      },
+      {
+        "id": "Observation.component:samplingFrequency",
+        "path": "Observation.component",
+        "sliceName": "samplingFrequency",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:samplingFrequency.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "SamplingFrequency"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:samplingFrequency.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:samplingFrequency.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1,
+        "fixedString": "Hertz"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:samplingFrequency.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1,
+        "fixedCode": "Hz"
+      },
+      {
+        "id": "Observation.component:filterSettings",
+        "path": "Observation.component",
+        "sliceName": "filterSettings",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:filterSettings.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:filterSettings.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:filterSettings.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:filterSettings.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "ECGFilterSettings"
+      },
+      {
+        "id": "Observation.component:filterSettings.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:filterSettings.value[x].intervalUnit",
+        "path": "Observation.component.value[x].intervalUnit",
+        "fixedCode": "{Events}"
+      },
+      {
+        "id": "Observation.component:filterSettings.value[x].dimensions",
+        "path": "Observation.component.value[x].dimensions",
+        "fixedPositiveInt": 4
+      },
+      {
+        "id": "Observation.component:filterSettings.value[x].data",
+        "path": "Observation.component.value[x].data",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rawMedianBeat",
+        "path": "Observation.component",
+        "sliceName": "rawMedianBeat",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rawMedianBeat.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rawMedianBeat.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rawMedianBeat.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:rawMedianBeat.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "RawMedianBeat"
+      },
+      {
+        "id": "Observation.component:rawMedianBeat.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:rawRhythm",
+        "path": "Observation.component",
+        "sliceName": "rawRhythm",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rawRhythm.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:rawRhythm.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:rawRhythm.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:rawRhythm.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "RawRhythm"
+      },
+      {
+        "id": "Observation.component:rawRhythm.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:pacedRhythm",
+        "path": "Observation.component",
+        "sliceName": "pacedRhythm",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pacedRhythm.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:pacedRhythm.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:pacedRhythm.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:pacedRhythm.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "PacedRhythm"
+      },
+      {
+        "id": "Observation.component:pacedRhythm.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:AF",
+        "path": "Observation.component",
+        "sliceName": "AF",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:AF.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:AF.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:AF.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:AF.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "ECG-AF"
+      },
+      {
+        "id": "Observation.component:AF.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:LBBB",
+        "path": "Observation.component",
+        "sliceName": "LBBB",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:LBBB.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:LBBB.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:LBBB.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:LBBB.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "ECG-LBBB"
+      },
+      {
+        "id": "Observation.component:LBBB.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:RBBB",
+        "path": "Observation.component",
+        "sliceName": "RBBB",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:RBBB.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:RBBB.code.coding:hfrCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "hfrCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:RBBB.code.coding:hfrCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/ecg-parameter"
+      },
+      {
+        "id": "Observation.component:RBBB.code.coding:hfrCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "ECG-RBBB"
+      },
+      {
+        "id": "Observation.component:RBBB.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadI",
+        "path": "Observation.component",
+        "sliceName": "leadI"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadI.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7386-8"
+      },
+      {
+        "id": "Observation.component:leadI.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead I",
+        "definition": "Raw data for lead I represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadII",
+        "path": "Observation.component",
+        "sliceName": "leadII"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadII.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7387-6"
+      },
+      {
+        "id": "Observation.component:leadII.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead II",
+        "definition": "Raw data for lead II represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadIII",
+        "path": "Observation.component",
+        "sliceName": "leadIII"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadIII.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7388-4"
+      },
+      {
+        "id": "Observation.component:leadIII.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead III",
+        "definition": "Raw data for lead III represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVR",
+        "path": "Observation.component",
+        "sliceName": "leadAVR"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadAVR.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7385-0"
+      },
+      {
+        "id": "Observation.component:leadAVR.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVR",
+        "definition": "Raw data for lead aVR represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVL",
+        "path": "Observation.component",
+        "sliceName": "leadAVL"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadAVL.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7384-3"
+      },
+      {
+        "id": "Observation.component:leadAVL.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVL",
+        "definition": "Raw data for lead aVL represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadAVF",
+        "path": "Observation.component",
+        "sliceName": "leadAVF"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadAVF.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7383-5"
+      },
+      {
+        "id": "Observation.component:leadAVF.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead aVF",
+        "definition": "Raw data for lead aVF represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV1",
+        "path": "Observation.component",
+        "sliceName": "leadV1"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV1.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7389-2"
+      },
+      {
+        "id": "Observation.component:leadV1.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V1",
+        "definition": "Raw data for lead V1 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV2",
+        "path": "Observation.component",
+        "sliceName": "leadV2"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV2.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7390-0"
+      },
+      {
+        "id": "Observation.component:leadV2.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V2",
+        "definition": "Raw data for lead V2 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV3",
+        "path": "Observation.component",
+        "sliceName": "leadV3"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV3.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7391-8"
+      },
+      {
+        "id": "Observation.component:leadV3.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V3",
+        "definition": "Raw data for lead V3 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV4",
+        "path": "Observation.component",
+        "sliceName": "leadV4"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV4.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7392-6"
+      },
+      {
+        "id": "Observation.component:leadV4.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V4",
+        "definition": "Raw data for lead V4 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV5",
+        "path": "Observation.component",
+        "sliceName": "leadV5"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV5.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7393-4"
+      },
+      {
+        "id": "Observation.component:leadV5.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V5",
+        "definition": "Raw data for lead V5 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:leadV6",
+        "path": "Observation.component",
+        "sliceName": "leadV6"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:leadV6.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "LP7394-2"
+      },
+      {
+        "id": "Observation.component:leadV6.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Raw data for lead V6",
+        "definition": "Raw data for lead V6 represented as SampledData.",
+        "min": 1,
+        "type": [
+          {
+            "code": "SampledData"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:stElevation",
+        "path": "Observation.component",
+        "sliceName": "stElevation",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "52674009"
+      },
+      {
+        "id": "Observation.component:stElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation",
+        "path": "Observation.component",
+        "sliceName": "ischemiaWithoutStElevation"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "52674009"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

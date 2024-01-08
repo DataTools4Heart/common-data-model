@@ -1,0 +1,171 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cardiacmri-parameter",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/cardiacmri-parameter",
+  "version": "1.0",
+  "name": "Cardiac MRI parameters",
+  "title": "Cardiac MRI parameters",
+  "status": "draft",
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "List of cardiac MRI parameters used in heart failure research.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SequenceName",
+      "display": "Sequence Name",
+      "definition": "Sequence name"
+    },
+    {
+      "code": "TR",
+      "display": "Repetition Time",
+      "definition": "Repetition time (ms)"
+    },
+    {
+      "code": "TE",
+      "display": "Echo Time",
+      "definition": "Echo time (ms)"
+    },
+    {
+      "code": "FA",
+      "display": "Flip Angle",
+      "definition": "Flip angle (degree)"
+    },
+    {
+      "code": "FoV",
+      "display": "Field of View",
+      "definition": "Field of view (mm)"
+    },
+    {
+      "code": "SliceThickness",
+      "display": "Slice Thickness",
+      "definition": " Slice thickness (mm)"
+    },
+    {
+      "code": "NumOfSlices",
+      "display": "Number of Slices",
+      "definition": "Number of slices (count)"
+    },
+    {
+      "code": "BreathHold",
+      "display": "Breath Hold",
+      "definition": "Whether breath was holded or not (boolean)"
+    },
+    {
+      "code": "BSA",
+      "display": "Body Surface Area",
+      "definition": "Body surface area (m2)"
+    },
+    {
+      "code": "LVEDVi",
+      "display": "Indexed left ventricular end diastolic volume",
+      "definition": "Indexed left ventricular end diastolic volume (mL/m2)"
+    },
+    {
+      "code": "LVESVi",
+      "display": "Indexed left ventricular end systolic volume",
+      "definition": "Indexed left ventricular end systolic volume (mL/m2)"
+    },
+    {
+      "code": "RVEDVi",
+      "display": "Indexed right ventricular end diastolic volume",
+      "definition": "Indexed right ventricular end diastolic volume (mL/m2)"
+    },
+    {
+      "code": "RVESVi",
+      "display": "Indexed right ventricular end systolic volume",
+      "definition": "Indexed right ventricular end systolic volume (mL/m2)"
+    },
+    {
+      "code": "LVLAIDED",
+      "display": "LV long axis internal diameter at end-diastole",
+      "definition": "LV long axis internal diameter at end-diastole (mm)"
+    },
+    {
+      "code": "LVLAIDES",
+      "display": "LV long axis internal diameter at end-systole",
+      "definition": "LV long axis internal diameter at end-systole (mm)"
+    },
+    {
+      "code": "LVIT",
+      "display": "LV inflow tract",
+      "definition": "LV inflow tract (mm)"
+    },
+    {
+      "code": "RVIT",
+      "display": "RV inflow tract",
+      "definition": "RV inflow tract (mm)"
+    },
+    {
+      "code": "LVOT",
+      "display": "LV outflow tract",
+      "definition": "LV outflow tract (mm)"
+    },
+    {
+      "code": "RVOT",
+      "display": "RV outflow tract",
+      "definition": "RV outflow tract (mm)"
+    },
+    {
+      "code": "SWT",
+      "display": "Septal wall thickness",
+      "definition": "Septal wall thickness (mm)"
+    },
+    {
+      "code": "LVPWT",
+      "display": "LV posterior wall thickness",
+      "definition": "LV posterior wall thickness (mm)"
+    },
+    {
+      "code": "LAA",
+      "display": "Left atrial area",
+      "definition": "Left atrial area (cm2)"
+    },
+    {
+      "code": "RAA",
+      "display": "Right atrial area",
+      "definition": "Right atrial area (cm2)"
+    },
+    {
+      "code": "LGE-LV",
+      "display": "Presence LGE in LV",
+      "definition": "Presence LGE in LV (boolean)"
+    },
+    {
+      "code": "LGE-RV",
+      "display": "Presence LGE in RV",
+      "definition": "Presence LGE in RV (boolean)"
+    },
+    {
+      "code": "ECV",
+      "display": "Extracellular volume",
+      "definition": "Extracellular volume (%)"
+    },
+    {
+      "code": "NT1val",
+      "display": "Native T1-mapping values",
+      "definition": "Native T1-mapping values (ms)"
+    }
+  ]
+}

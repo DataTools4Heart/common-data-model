@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "blood-specimen-type",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/blood-specimen-types",
+  "version": "1.0",
+  "name": "BloodSpecimenType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Blood specimen types used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "concept": [
+          {
+            "code": "BLDV",
+            "display": "Blood venous"
+          },
+          {
+            "code": "BLDA",
+            "display": "Blood arterial"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "resourceType": "ValueSet",
+  "id": "symptom",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/symptom",
+  "version": "1.0",
+  "name": "Symptom",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Symptoms used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "display": "Ankle swelling",
+            "code": "267039000"
+          },
+          {
+            "display": "Ascites",
+            "code": "389026000"
+          },
+          {
+            "display": "Breathlessness",
+            "code": "267036007"
+          },
+          {
+            "display": "Cardiac murmur",
+            "code": "59495006"
+          },
+          {
+            "display": "Chest pain",
+            "code": "29857009"
+          },
+          {
+            "display": "Cheyne-stokes respiration",
+            "code": "90480005"
+          },
+          {
+            "display": "Depression",
+            "code": "35489007"
+          },
+          {
+            "display": "Dizziness",
+            "code": "404640003"
+          },
+          {
+            "display": "Elevated jugular venous pressure",
+            "code": "22447003"
+          },
+          {
+            "display": "Fatigue",
+            "code": "84229001"
+          },
+          {
+            "display": "Hepatojugular reflux",
+            "code": "72196001"
+          },
+          {
+            "display": "Hepatomegaly",
+            "code": "80515008"
+          },
+          {
+            "display": "Irregular pulse",
+            "code": "361137007"
+          },
+          {
+            "display": "Loss of appetite",
+            "code": "79890006"
+          },
+          {
+            "display": "Nocturnal cough",
+            "code": "161947006"
+          },
+          {
+            "display": "Oliguria",
+            "code": "83128009"
+          },
+          {
+            "display": "Orthopnoea",
+            "code": "62744007"
+          },
+          {
+            "display": "Palpitations",
+            "code": "80313002"
+          },
+          {
+            "display": "Paroxysmal nocturnal dyspnea",
+            "code": "55442000"
+          },
+          {
+            "display": "Peripheral edema",
+            "code": "271809000"
+          },
+          {
+            "display": "Pleural effusion",
+            "code": "60046008"
+          },
+          {
+            "display": "Pulmonary crepitations",
+            "code": "48409008"
+          },
+          {
+            "display": "Reduced exercise tolerance",
+            "code": "267044007"
+          },
+          {
+            "display": "Syncope",
+            "code": "272030005"
+          },
+          {
+            "display": "Tachycardia",
+            "code": "3424008"
+          },
+          {
+            "display": "Tachypnoea",
+            "code": "271823003"
+          },
+          {
+            "display": "Third heart sound",
+            "code": "1285004"
+          },
+          {
+            "display": "Weight gain",
+            "code": "8943002"
+          },
+          {
+            "display": "Weight loss",
+            "code": "89362005"
+          }
+        ]
+      }
+    ]
+  }
+}

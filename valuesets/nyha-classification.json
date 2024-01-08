@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nyha-classification",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/nyha-classification",
+  "version": "1.0",
+  "name": "NYHClassification",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "NYHA classification codes used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA28404-4",
+            "display": "Class-I"
+          },
+          {
+            "code": "LA28405-1",
+            "display": "Class-II"
+          },
+          {
+            "code": "LA28406-9",
+            "display": "Class-III"
+          },
+          {
+            "code": "LA28407-7",
+            "display": "Class-IV"
+          }
+        ]
+      }
+    ]
+  }
+}

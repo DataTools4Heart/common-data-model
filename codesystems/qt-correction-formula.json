@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qt-correction-formula",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/qt-correction-formula",
+  "version": "1.0",
+  "name": "QT Interval Correction Formula",
+  "title": "QT Interval Correction Formula",
+  "status": "draft",
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "List of codes representing formula used for QT interval correction.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "bazett",
+      "display": "Bazett",
+      "definition": "Bazett"
+    },
+    {
+      "code": "frederica",
+      "display": "Frederica",
+      "definition": "Frederica"
+    },
+    {
+      "code": "framingham",
+      "display": "Framingham",
+      "definition": "Framingham"
+    }
+  ]
+}

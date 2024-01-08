@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "smoking-status",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/smoking-status",
+  "version": "1.0",
+  "name": "SmokingStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-08-18",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Smoking status codes used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "449868002",
+            "display": "Current every day smoker"
+          },
+          {
+            "code": "428041000124106",
+            "display": "Current some day smoker"
+          },
+          {
+            "code": "8517006",
+            "display": "Former smoker"
+          },
+          {
+            "code": "266919005",
+            "display": "Never smoker"
+          },
+          {
+            "code": "77176002",
+            "display": "Smoker, current status unknown"
+          },
+          {
+            "code": "266927001",
+            "display": "Unknown if ever smoked"
+          },
+          {
+            "code": "428071000124103",
+            "display": "Current Heavy tobacco smoker"
+          },
+          {
+            "code": "428061000124105",
+            "display": "Current Light tobacco smoker"
+          }
+        ]
+      }
+    ]
+  }
+}

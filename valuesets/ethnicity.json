@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ethnicity",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/ethnicity",
+  "version": "1.0",
+  "name": "Ethnicity",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Patient ethnicity codes used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "413464008",
+            "display": "African race (racial group)"
+          },
+          {
+            "code": "413582008",
+            "display": "Asian race (racial group)"
+          },
+          {
+            "code": "413773004",
+            "display": "Caucasian (racial group)"
+          },
+          {
+            "code": "414408004",
+            "display": "Hispanic (racial group)"
+          },
+          {
+            "code": "415794004",
+            "display": "Unknown racial group (racial group)"
+          }
+        ]
+      }
+    ]
+  }
+}

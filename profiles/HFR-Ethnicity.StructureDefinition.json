@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Ethnicity",
+  "name": "HFR_Ethnicity",
+  "status": "draft",
+  "description": "Patient's ethnicity",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "fhirpath",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Ethnicity"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:hfrPatientEthnicity",
+        "path": "Extension.value[x].coding",
+        "sliceName": "hfrPatientEthnicity",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/ethnicity"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:hfrPatientEthnicity.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Extension.value[x].coding:hfrPatientEthnicity.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

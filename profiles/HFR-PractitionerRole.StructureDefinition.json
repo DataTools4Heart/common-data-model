@@ -1,0 +1,90 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PractitionerRole",
+  "name": "HFR_PractitionerRole",
+  "status": "draft",
+  "description": "A specific set of roles/specialties/services that a practitioner may perform at an organization. Instead of referring to individual practitioners/doctors, we may refer to their roles in our profiles.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code:hfrPractitionerRole",
+        "path": "PractitionerRole.code",
+        "sliceName": "hfrPractitionerRole",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/practitioner-role"
+        }
+      },
+      {
+        "id": "PractitionerRole.code:hfrPractitionerRole.coding",
+        "path": "PractitionerRole.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty.coding",
+        "path": "PractitionerRole.specialty.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:hfrSpecialty",
+        "path": "PractitionerRole.specialty.coding",
+        "sliceName": "hfrSpecialty",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/practitioner-specialty"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:hfrSpecialty.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:hfrSpecialty.code",
+        "path": "PractitionerRole.specialty.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

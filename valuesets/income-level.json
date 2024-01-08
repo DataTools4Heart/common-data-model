@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "income-level",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/income-level",
+  "version": "1.0",
+  "name": "IncomeLevel",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Codes indicating the income level.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA29214-6",
+            "display": "My income is sufficient, well managed; has discretionary income and is able to save"
+          },
+          {
+            "code": "LA29215-3",
+            "display": "I can meet basic needs and manage debt without assistance"
+          },
+          {
+            "code": "LA29216-1",
+            "display": "I can meet basic needs with subsidy; appropriate spending"
+          },
+          {
+            "code": "LA29217-9",
+            "display": "I have inadequate income and/or spontaneous or inappropriate spending"
+          },
+          {
+            "code": "LA29218-7",
+            "display": "I have no income"
+          }
+        ]
+      }
+    ]
+  }
+}

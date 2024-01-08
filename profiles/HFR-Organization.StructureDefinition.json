@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Organization",
+  "name": "HFR_Organization",
+  "status": "draft",
+  "description": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, hospitals, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Organization.type:hfrOrganizationType",
+        "path": "Organization.type",
+        "sliceName": "hfrOrganizationType",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/organization-type"
+        }
+      },
+      {
+        "id": "Organization.type:hfrOrganizationType.coding",
+        "path": "Organization.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.type:hfrOrganizationType.coding.system",
+        "path": "Organization.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/organization-type"
+      },
+      {
+        "id": "Organization.type:hfrOrganizationType.coding.code",
+        "path": "Organization.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "min": 1
+      }
+    ]
+  }
+}

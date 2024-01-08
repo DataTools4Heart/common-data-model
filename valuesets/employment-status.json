@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "employment-status",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/employment-status",
+  "version": "1.0",
+  "name": "EmploymentStatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-07-27",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Employment status codes.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA17956-6",
+            "display": "Unemployed"
+          },
+          {
+            "code": "LA17957-4",
+            "display": "Employed full time"
+          },
+          {
+            "code": "LA17958-2",
+            "display": "Employed part time"
+          },
+          {
+            "code": "LA17959-0",
+            "display": "Homemaker"
+          },
+          {
+            "code": "LA17960-8",
+            "display": "Retired due to age/preference"
+          },
+          {
+            "code": "LA17961-6",
+            "display": "Retired due to disability"
+          },
+          {
+            "code": "LA17962-4",
+            "display": "Medical leave of absence"
+          },
+          {
+            "code": "LA15276-1",
+            "display": "Student"
+          }
+        ]
+      }
+    ]
+  }
+}

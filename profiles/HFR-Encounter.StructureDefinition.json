@@ -1,0 +1,79 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Encounter",
+  "name": "HFR_Encounter",
+  "status": "draft",
+  "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-class"
+        }
+      },
+      {
+        "id": "Encounter.class.coding",
+        "path": "Encounter.class.coding",
+        "min": 1
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.actualPeriod",
+        "path": "Encounter.actualPeriod",
+        "min": 1
+      },
+      {
+        "id": "Encounter.actualPeriod.start",
+        "path": "Encounter.actualPeriod.start",
+        "min": 1
+      },
+      {
+        "id": "Encounter.admission.origin",
+        "path": "Encounter.admission.origin",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.admission.destination",
+        "path": "Encounter.admission.destination",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Organization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
