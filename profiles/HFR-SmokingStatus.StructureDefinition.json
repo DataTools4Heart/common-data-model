@@ -66,20 +66,6 @@
         "fixedString": "Tobacco smoking status"
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "id": "Observation.effective[x].start",
-        "path": "Observation.effective[x].start",
-        "min": 1
-      },
-      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "min": 1,
