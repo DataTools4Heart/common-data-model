@@ -20,7 +20,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PatientObservation"
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Patient"
             ]
           }
         ]
