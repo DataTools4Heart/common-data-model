@@ -73,6 +73,9 @@
         "type": [
           {
             "code": "dateTime"
+          },
+          {
+            "code": "Period"
           }
         ]
       }
