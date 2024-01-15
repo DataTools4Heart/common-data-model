@@ -14,6 +14,7 @@
       {
         "id": "AllergyIntolerance.clinicalStatus",
         "path": "AllergyIntolerance.clinicalStatus",
+        "min": 1,
         "fixedCodeableConcept": {
           "coding": [
             {
