@@ -409,13 +409,13 @@
         "fixedCode": "ms"
       },
       {
-        "id": "Observation.component:qtIntervalCorrected",
+        "id": "Observation.component:qtIntervalCorrectedBazett",
         "path": "Observation.component",
-        "sliceName": "qtIntervalCorrected",
+        "sliceName": "qtIntervalCorrectedBazett",
         "max": "1"
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.code.coding",
+        "id": "Observation.component:qtIntervalCorrectedBazett.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
           "discriminator": [
@@ -425,30 +425,27 @@
             }
           ],
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode",
+        "id": "Observation.component:qtIntervalCorrectedBazett.code.coding:bazettCode",
         "path": "Observation.component.code.coding",
-        "sliceName": "loincCode",
-        "min": 1,
-        "max": "1"
+        "sliceName": "bazettCode"
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.system",
+        "id": "Observation.component:qtIntervalCorrectedBazett.code.coding:bazettCode.system",
         "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedUri": "http://loinc.org"
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/qt-correction-formula"
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.code.coding:loincCode.code",
+        "id": "Observation.component:qtIntervalCorrectedBazett.code.coding:bazettCode.code",
         "path": "Observation.component.code.coding.code",
         "min": 1,
-        "fixedCode": "8636-3"
+        "fixedCode": "bazett"
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.value[x]",
+        "id": "Observation.component:qtIntervalCorrectedBazett.value[x]",
         "path": "Observation.component.value[x]",
         "min": 1,
         "type": [
@@ -458,41 +455,156 @@
         ]
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.value[x].extension:hFRQTIntervalCorrectionFormula",
-        "path": "Observation.component.value[x].extension",
-        "sliceName": "hFRQTIntervalCorrectionFormula",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-QTIntervalCorrectionFormula"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Observation.component:qtIntervalCorrected.value[x].value",
+        "id": "Observation.component:qtIntervalCorrectedBazett.value[x].value",
         "path": "Observation.component.value[x].value",
         "min": 1
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.value[x].unit",
+        "id": "Observation.component:qtIntervalCorrectedBazett.value[x].unit",
         "path": "Observation.component.value[x].unit",
-        "min": 1,
-        "fixedString": "millisecond"
+        "min": 1
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.value[x].system",
+        "id": "Observation.component:qtIntervalCorrectedBazett.value[x].system",
         "path": "Observation.component.value[x].system",
-        "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
+        "min": 1
       },
       {
-        "id": "Observation.component:qtIntervalCorrected.value[x].code",
+        "id": "Observation.component:qtIntervalCorrectedBazett.value[x].code",
         "path": "Observation.component.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica",
+        "path": "Observation.component",
+        "sliceName": "qtIntervalCorrectedFrederica",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.code.coding:fredericaCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "fredericaCode"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.code.coding:fredericaCode.system",
+        "path": "Observation.component.code.coding.system",
         "min": 1,
-        "fixedCode": "ms"
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/qt-correction-formula"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.code.coding:fredericaCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "frederica"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFrederica.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham",
+        "path": "Observation.component",
+        "sliceName": "qtIntervalCorrectedFramingham",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.code.coding:framinghamCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "framinghamCode"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.code.coding:framinghamCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/qt-correction-formula"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.code.coding:framinghamCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "framingham"
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.value[x].value",
+        "path": "Observation.component.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.value[x].unit",
+        "path": "Observation.component.value[x].unit",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:qtIntervalCorrectedFramingham.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "min": 1
       },
       {
         "id": "Observation.component:qrsComplexCount",

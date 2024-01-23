@@ -62,6 +62,10 @@
           {
             "code": "2708-6",
             "display": "Oxygen saturation in Arterial blood"
+          },
+          {
+            "code": "34534-8",
+            "display": "12 lead EKG panel"
           }
         ]
       }
