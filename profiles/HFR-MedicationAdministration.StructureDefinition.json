@@ -78,6 +78,11 @@
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "min": 1
       }
     ]
   }
