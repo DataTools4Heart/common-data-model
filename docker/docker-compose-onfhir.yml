@@ -5,10 +5,10 @@ volumes:
 services:
   mongo:
     image: mongo:4.4
-    container_name: mongo
+    container_name: dt4h-mongo
     restart: always
     ports:
-      - "27017:27017"
+      - "6017:27017"
     healthcheck:
       test: echo 'db.stats().ok' | mongo localhost:27017/test --quiet
       interval: 10s
@@ -20,7 +20,7 @@ services:
       - onfhirdata:/data/db
   onfhir:
     image: srdc/onfhir:r5
-    container_name: onfhir
+    container_name: dt4h-onfhir
     restart: always
     depends_on:
       mongo:
@@ -31,7 +31,7 @@ services:
       - DB_EMBEDDED=false
       - DB_HOST=mongo:27017
     ports:
-      - "8080:8080"
+      - "6080:8080"
     networks:
       - onfhir-network
     volumes:
