@@ -19,7 +19,7 @@ services:
     volumes:
       - onfhirdata:/data/db
   onfhir:
-    image: srdc/onfhir:r4
+    image: srdc/onfhir:r5
     container_name: onfhir
     restart: always
     depends_on:
@@ -27,7 +27,7 @@ services:
         condition: service_healthy
     environment:
       - APP_CONF_FILE=/usr/local/onfhir/conf/docker/onfhir-docker.conf
-      - FHIR_ROOT_URL=http://127.0.0.1:8080/fhir
+      - FHIR_ROOT_URL=http://onfhir:8080/fhir
       - DB_EMBEDDED=false
       - DB_HOST=mongo:27017
     ports:
