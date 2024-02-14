@@ -73,31 +73,6 @@
       "definition": "Whether breath was holded or not (boolean)"
     },
     {
-      "code": "BSA",
-      "display": "Body Surface Area",
-      "definition": "Body surface area (m2)"
-    },
-    {
-      "code": "LVEDVi",
-      "display": "Indexed left ventricular end diastolic volume",
-      "definition": "Indexed left ventricular end diastolic volume (mL/m2)"
-    },
-    {
-      "code": "LVESVi",
-      "display": "Indexed left ventricular end systolic volume",
-      "definition": "Indexed left ventricular end systolic volume (mL/m2)"
-    },
-    {
-      "code": "RVEDVi",
-      "display": "Indexed right ventricular end diastolic volume",
-      "definition": "Indexed right ventricular end diastolic volume (mL/m2)"
-    },
-    {
-      "code": "RVESVi",
-      "display": "Indexed right ventricular end systolic volume",
-      "definition": "Indexed right ventricular end systolic volume (mL/m2)"
-    },
-    {
       "code": "LVLAIDED",
       "display": "LV long axis internal diameter at end-diastole",
       "definition": "LV long axis internal diameter at end-diastole (mm)"

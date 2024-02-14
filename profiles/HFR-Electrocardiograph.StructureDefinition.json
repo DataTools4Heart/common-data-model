@@ -1333,6 +1333,103 @@
         ]
       },
       {
+        "id": "Observation.component:stElevation",
+        "path": "Observation.component",
+        "sliceName": "stElevation",
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:stElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "164931005"
+      },
+      {
+        "id": "Observation.component:stElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation",
+        "path": "Observation.component",
+        "sliceName": "ischemiaWithoutStElevation"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "snomedCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "52674009"
+      },
+      {
+        "id": "Observation.component:ischemiaWithoutStElevation.value[x]",
+        "path": "Observation.component.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
         "id": "Observation.component:leadI",
         "path": "Observation.component",
         "sliceName": "leadI"
@@ -1929,103 +2026,6 @@
         "type": [
           {
             "code": "SampledData"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:stElevation",
-        "path": "Observation.component",
-        "sliceName": "stElevation",
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:stElevation.code.coding",
-        "path": "Observation.component.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:stElevation.code.coding:snomedCode",
-        "path": "Observation.component.code.coding",
-        "sliceName": "snomedCode",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:stElevation.code.coding:snomedCode.system",
-        "path": "Observation.component.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:stElevation.code.coding:snomedCode.code",
-        "path": "Observation.component.code.coding.code",
-        "min": 1,
-        "fixedCode": "52674009"
-      },
-      {
-        "id": "Observation.component:stElevation.value[x]",
-        "path": "Observation.component.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation",
-        "path": "Observation.component",
-        "sliceName": "ischemiaWithoutStElevation"
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation.code.coding",
-        "path": "Observation.component.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode",
-        "path": "Observation.component.code.coding",
-        "sliceName": "snomedCode",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.system",
-        "path": "Observation.component.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct"
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation.code.coding:snomedCode.code",
-        "path": "Observation.component.code.coding.code",
-        "min": 1,
-        "fixedCode": "52674009"
-      },
-      {
-        "id": "Observation.component:ischemiaWithoutStElevation.value[x]",
-        "path": "Observation.component.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "boolean"
           }
         ]
       }

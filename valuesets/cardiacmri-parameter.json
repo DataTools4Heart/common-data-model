@@ -39,6 +39,10 @@
         "system": "http://loinc.org",
         "concept": [
           {
+            "code": "3139-3",
+            "display": "Body surface area Measured"
+          },
+          {
             "code": "8821-1",
             "display": "Left ventricular End-diastolic volume by Imaging"
           },

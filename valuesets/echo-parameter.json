@@ -36,28 +36,20 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "8806-2",
-            "display": "Left ventricular Ejection fraction by 2D echo"
+            "code": "3139-3",
+            "display": "Body surface area Measured"
           },
           {
-            "code": "3193-3",
-            "display": "Body surface area Measured"
+            "code": "8806-2",
+            "display": "Left ventricular Ejection fraction by 2D echo"
           },
           {
             "code": "75988-6",
             "display": "Left ventricular End diastolic volume"
           },
           {
-            "code": "79997-3",
-            "display": "End-diastolic volume/Body surface area"
-          },
-          {
             "code": "75989-4",
             "display": "Left ventricular End systolic volume"
-          },
-          {
-            "code": "80002-9",
-            "display": "End-systolic volume/Body surface area"
           },
           {
             "code": "18083-6",
@@ -124,14 +116,6 @@
             "display": "Tricuspid valve Peak systolic flow velocity by US.doppler"
           },
           {
-            "code": "77904-1",
-            "display": "US.2D+Calculated by modified Simpson method"
-          },
-          {
-            "code": "77906-6",
-            "display": "US.2D+Calculated by modified Simpson method"
-          },
-          {
             "code": "17977-0",
             "display": "Left atrial Area by US.2D.A4C"
           },
@@ -140,20 +124,28 @@
             "display": "Left atrial Diameter anterior-posterior systole by US 2D"
           },
           {
-            "code": "93635-1",
-            "display": "Right atrial End-systolic volume by US.2D.A4C"
-          },
-          {
-            "code": "80075-5",
-            "display": "Right atrial Area at end systole by US.2D.A4C+Measured by planimetry"
-          },
-          {
             "code": "18170-1",
             "display": "Left ventricular outflow tract Blood velocity-time integral by US.doppler"
           },
           {
             "code": "82337-7",
             "display": "Right atrial Intrachamber pressure estimated by US"
+          },
+          {
+            "code": "77904-1",
+            "display": "US.2D+Calculated by modified Simpson method"
+          },
+          {
+            "code": "77906-6",
+            "display": "US.2D+Calculated by modified Simpson method"
+          },
+          {
+            "code": "80075-5",
+            "display": "Right atrial Area at end systole by US.2D.A4C+Measured by planimetry"
+          },
+          {
+            "code": "93635-1",
+            "display": "Right atrial End-systolic volume by US.2D.A4C"
           }
         ]
       },

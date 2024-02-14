@@ -33,64 +33,14 @@
   "content": "complete",
   "concept": [
     {
-      "code": "LVEDDi",
-      "display": "Indexed left-ventricle end-diastolic diameter",
-      "definition": "Indexed left-ventricle end-diastolic diameter"
-    },
-    {
-      "code": "LVESDi",
-      "display": "Indexed left-ventricle end-systolic diameter",
-      "definition": "Indexed left-ventricle end-systolic diameter"
-    },
-    {
       "code": "RVEDD",
       "display": "Right-ventricle end-diastolic diameter",
       "definition": "Right-ventricle end-diastolic diameter"
     },
     {
-      "code": "RVEDDi",
-      "display": "Indexed right-ventricle end-diastolic diameter",
-      "definition": "Indexed right-ventricle end-systolic diameter"
-    },
-    {
       "code": "RVESD",
       "display": "Right-ventricle end-systolic diameter",
       "definition": "Right-ventricle end-systolic diameter"
-    },
-    {
-      "code": "RVESDi",
-      "display": "Indexed right-ventricle end-systolic diameter",
-      "definition": "Indexed right-ventricle end-systolic diameter"
-    },
-    {
-      "code": "IVSdi",
-      "display": "Indexed intraventricular septal thickness end diastole",
-      "definition": "Indexed intraventricular septal thickness end diastole"
-    },
-    {
-      "code": "IVSsi",
-      "display": "Indexed intraventricular septal thickness end systole",
-      "definition": "Indexed intraventricular septal thickness end systole"
-    },
-    {
-      "code": "IVSi",
-      "display": "Indexed intraventricular septal thickness",
-      "definition": "Indexed intraventricular septal thickness"
-    },
-    {
-      "code": "LVPWdi",
-      "display": "Indexed left ventricular posterior wall thickness at end diastole",
-      "definition": "Indexed left ventricular posterior wall thickness at end diastole"
-    },
-    {
-      "code": "LVPWsi",
-      "display": "Indexed left ventricular posterior wall thickness at end systole",
-      "definition": "Indexed left ventricular posterior wall thickness at end systole"
-    },
-    {
-      "code": "LVPWi",
-      "display": "Indexed left ventricular posterior wall thickness",
-      "definition": "Indexed left ventricular posterior wall thickness"
     },
     {
       "code": "HRecho",
@@ -133,54 +83,9 @@
       "definition": "Atrial volume"
     },
     {
-      "code": "Avoli",
-      "display": "Indexed atrial volume",
-      "definition": "Indexed atrial volume"
-    },
-    {
-      "code": "LAAi",
-      "display": "Indexed left atrial area",
-      "definition": "Indexed left atrial area"
-    },
-    {
-      "code": "LADi",
-      "display": "Indexed left atrial diameter",
-      "definition": "Indexed left atrial diameter"
-    },
-    {
-      "code": "RAVi",
-      "display": "Indexed right atrial volume",
-      "definition": "Indexed right atrial volume"
-    },
-    {
-      "code": "RAAi",
-      "display": "Indexed right atrial area",
-      "definition": "Indexed right atrial area"
-    },
-    {
-      "code": "RAD",
-      "display": "Right atrial diameter",
-      "definition": "Right atrial diameter"
-    },
-    {
-      "code": "RADi",
-      "display": "Indexed right atrial diameter",
-      "definition": "Indexed right atrial diameter"
-    },
-    {
-      "code": "TAPSE",
-      "display": "Tricuspid Annular Plane Systolic Excursion",
-      "definition": "Tricuspid Annular Plane Systolic Excursion"
-    },
-    {
       "code": "LAV",
       "display": "Left atrial volume",
       "definition": "Left atrial volume"
-    },
-    {
-      "code": "LAVi",
-      "display": "Indexed left atrial volume",
-      "definition": "Indexed left atrial volume"
     },
     {
       "code": "RAV",
@@ -188,9 +93,14 @@
       "definition": "Right atrial volume"
     },
     {
-      "code": "RAVi",
-      "display": "Indexed right atrial volume",
-      "definition": "Indexed right atrial volume"
+      "code": "RAD",
+      "display": "Right atrial diameter",
+      "definition": "Right atrial diameter"
+    },
+    {
+      "code": "CVPe",
+      "display": "Estimated central venous pressure",
+      "definition": "Estimated central venous pressure"
     }
   ]
 }
