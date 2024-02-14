@@ -159,6 +159,11 @@
     },
     {
       "code": "RAD",
+      "display": "Right atrial diameter",
+      "definition": "Right atrial diameter"
+    },
+    {
+      "code": "RADi",
       "display": "Indexed right atrial diameter",
       "definition": "Indexed right atrial diameter"
     },
@@ -166,6 +171,26 @@
       "code": "TAPSE",
       "display": "Tricuspid Annular Plane Systolic Excursion",
       "definition": "Tricuspid Annular Plane Systolic Excursion"
+    },
+    {
+      "code": "LAV",
+      "display": "Left atrial volume",
+      "definition": "Left atrial volume"
+    },
+    {
+      "code": "LAVi",
+      "display": "Indexed left atrial volume",
+      "definition": "Indexed left atrial volume"
+    },
+    {
+      "code": "RAV",
+      "display": "Right atrial volume",
+      "definition": "Right atrial volume"
+    },
+    {
+      "code": "RAVi",
+      "display": "Indexed right atrial volume",
+      "definition": "Indexed right atrial volume"
     }
   ]
 }
