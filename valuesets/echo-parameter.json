@@ -133,11 +133,7 @@
           },
           {
             "code": "77904-1",
-            "display": "US.2D+Calculated by modified Simpson method"
-          },
-          {
-            "code": "77906-6",
-            "display": "US.2D+Calculated by modified Simpson method"
+            "display": "Left atrial End-systolic volume by US.2D+Calculated by modified Simpson method"
           },
           {
             "code": "80075-5",
