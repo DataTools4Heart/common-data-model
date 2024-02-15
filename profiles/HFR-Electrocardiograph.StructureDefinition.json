@@ -58,6 +58,20 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:qrsDuration.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Observation.component:qrsDuration.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
@@ -127,6 +141,20 @@
         "id": "Observation.component:rAxis",
         "path": "Observation.component",
         "sliceName": "rAxis"
+      },
+      {
+        "id": "Observation.component:rAxis.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.component:rAxis.code.coding",
@@ -200,6 +228,20 @@
         "sliceName": "pAxis"
       },
       {
+        "id": "Observation.component:pAxis.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Observation.component:pAxis.code.coding",
         "path": "Observation.component.code.coding",
         "slicing": {
@@ -269,6 +311,20 @@
         "id": "Observation.component:tAxis",
         "path": "Observation.component",
         "sliceName": "tAxis"
+      },
+      {
+        "id": "Observation.component:tAxis.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.component:tAxis.code.coding",
@@ -341,6 +397,20 @@
         "path": "Observation.component",
         "sliceName": "qtInterval",
         "max": "1"
+      },
+      {
+        "id": "Observation.component:qtInterval.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.component:qtInterval.code.coding",
@@ -691,6 +761,20 @@
         "path": "Observation.component",
         "sliceName": "prInterval",
         "max": "1"
+      },
+      {
+        "id": "Observation.component:prInterval.extension:hFRECGSignalOutput",
+        "path": "Observation.component.extension",
+        "sliceName": "hFRECGSignalOutput",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR_ECGSignalOutput"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Observation.component:prInterval.code.coding",
