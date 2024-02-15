@@ -27,7 +27,8 @@ This repository includes the FHIR profile definitions, code systems and value se
 Data Model
 used for heart failure research. The profiling was performed with respect to the data requirements originated from the
 use-case
-scenarios of the [DataTools4Heart](https://www.datatools4heart.eu/) and [AI4HF](https://www.ai4hf.com/) projects.
+scenarios of the [DataTools4Heart](https://www.datatools4heart.eu/) and [AI4HF](https://www.ai4hf.com/) projects. 
+Please see the [Excel file](CommonDataModel.xlsx) for the detailed definitions of the profiles. 
 
 ### Profiles
 
