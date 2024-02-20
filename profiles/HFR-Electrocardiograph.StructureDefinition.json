@@ -2112,6 +2112,67 @@
             "code": "SampledData"
           }
         ]
+      },
+      {
+        "id": "Observation.component:typeOfRhythm",
+        "path": "Observation.component",
+        "sliceName": "typeOfRhythm"
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.code.coding",
+        "path": "Observation.component.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "76281-5"
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Type of rhythm",
+        "definition": "Type of rhythm",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.value[x].coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.value[x].coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
       }
     ]
   }
