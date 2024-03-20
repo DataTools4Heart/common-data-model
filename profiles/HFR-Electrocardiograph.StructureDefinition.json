@@ -54,8 +54,7 @@
       {
         "id": "Observation.component:qrsDuration",
         "path": "Observation.component",
-        "sliceName": "qrsDuration",
-        "max": "1"
+        "sliceName": "qrsDuration"
       },
       {
         "id": "Observation.component:qrsDuration.extension:hFRECGSignalOutput",
@@ -395,8 +394,7 @@
       {
         "id": "Observation.component:qtInterval",
         "path": "Observation.component",
-        "sliceName": "qtInterval",
-        "max": "1"
+        "sliceName": "qtInterval"
       },
       {
         "id": "Observation.component:qtInterval.extension:hFRECGSignalOutput",
@@ -759,8 +757,7 @@
       {
         "id": "Observation.component:prInterval",
         "path": "Observation.component",
-        "sliceName": "prInterval",
-        "max": "1"
+        "sliceName": "prInterval"
       },
       {
         "id": "Observation.component:prInterval.extension:hFRECGSignalOutput",
