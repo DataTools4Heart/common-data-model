@@ -25,6 +25,11 @@ services:
     depends_on:
       mongo:
         condition: service_healthy
+    healthcheck:
+      test: curl --fail http://localhost:8080/fhir/metadata || exit 1
+      interval: 10s
+      timeout: 10s
+      retries: 5            
     environment:
       - APP_CONF_FILE=/usr/local/onfhir/conf/docker/onfhir-docker.conf
       - FHIR_ROOT_URL=http://onfhir:8080/fhir
