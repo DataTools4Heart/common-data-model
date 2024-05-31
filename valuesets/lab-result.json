@@ -138,6 +138,14 @@
           {
             "code": "41995-2",
             "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "30385-9",
+            "display": "Red blood cell distribution width"
+          },
+          {
+            "code": "6299-2",
+            "display": "Urea nitrogen [Mass/volume] in Blood"
           }
         ]
       }
