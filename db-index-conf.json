@@ -1,0 +1,158 @@
+{
+  "resources": [
+    {
+      "resource": "AllergyIntolerance",
+      "shardKey": ["patient"],
+      "indexes": []
+    },
+    {
+      "resource": "Bundle",
+      "shardKey": ["_id"],
+      "indexes": []
+    },
+    {
+      "resource": "CapabilityStatement",
+      "indexes": []
+    },
+    {
+      "resource": "Condition",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "DiagnosticReport",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "DocumentManifest",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "DocumentReference",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "Encounter",
+      "shardKey": ["subject"],
+      "indexes": [
+        {"parameters": ["service-provider","date"]},
+        {"parameters": ["participant","date"]}
+      ]
+    },
+    {
+      "resource": "FamilyMemberHistory",
+      "shardKey": ["patient"],
+      "indexes": []
+    },
+    {
+      "resource": "ImagingStudy",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "Immunization",
+      "shardKey": ["patient"],
+      "indexes": []
+    },
+    {
+      "resource": "Location",
+      "indexes": []
+    },
+    {
+      "resource": "Medication",
+      "indexes": []
+    },
+    {
+      "resource": "MedicationAdministration",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "MedicationDispense",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "MedicationKnowledge",
+      "indexes": []
+    },
+    {
+      "resource": "MedicationRequest",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "MedicationStatement",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "Observation",
+      "shardKey": ["subject"],
+      "indexes": [
+        {
+          "parameters": [ "subject", "category" ],
+          "description": "For category based queries during data transformation (e.g. vital signs)"
+        },
+        {
+          "parameters": [ "subject", "code" ],
+          "description": "For code based queries during data transformation (e.g. blood pressure)"
+        }
+      ]
+    },
+    {
+      "resource": "Organization",
+      "indexes": []
+    },
+    {
+      "resource": "Patient",
+      "shardKey": ["_id"],
+      "indexes": []
+    },
+    {
+      "resource": "Person",
+      "shardKey": ["_id"],
+      "indexes": []
+    },
+    {
+      "resource": "Practitioner",
+      "indexes": []
+    },
+    {
+      "resource": "PractitionerRole",
+      "indexes": [
+        {"parameters": ["practitioner"]},
+        {"parameters": ["role"]},
+        {"parameters": ["specialty"]}
+      ]
+    },
+    {
+      "resource": "Procedure",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "QuestionnaireResponse",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "RiskAssessment",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "ServiceRequest",
+      "shardKey": ["subject"],
+      "indexes": []
+    },
+    {
+      "resource": "Specimen",
+      "shardKey": ["patient"],
+      "indexes": []
+    }
+  ]
+}
