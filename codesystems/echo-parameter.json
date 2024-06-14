@@ -78,6 +78,11 @@
       "definition": "Inferior vena cava minimum diameter"
     },
     {
+      "code": "IVCd",
+      "display": "Inferior vena cava diameter",
+      "definition": "Inferior vena cava diameter"
+    },
+    {
       "code": "Avol",
       "display": "Atrial volume",
       "definition": "Atrial volume"
@@ -101,6 +106,11 @@
       "code": "CVPe",
       "display": "Estimated central venous pressure",
       "definition": "Estimated central venous pressure"
+    },
+    {
+      "code": "LVEDDi",
+      "display": "Indexed left-ventricle end-diastolic diameter",
+      "definition": "Indexed left-ventricle end-diastolic diameter"
     }
   ]
 }
