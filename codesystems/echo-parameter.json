@@ -111,6 +111,11 @@
       "code": "LVEDDi",
       "display": "Indexed left-ventricle end-diastolic diameter",
       "definition": "Indexed left-ventricle end-diastolic diameter"
+    },
+    {
+      "code": "LVESDi",
+      "display": "Indexed left-ventricle end-systolic diameter",
+      "definition": "Indexed left-ventricle end-systolic diameter"
     }
   ]
 }

@@ -146,6 +146,10 @@
           {
             "code": "79997-3",
             "display": "Left ventricular End-diastolic volume/Body surface area"
+          },
+          {
+            "code": "8785-8",
+            "display": "Left ventricular Stroke volume index by 2D echo"
           }
         ]
       },
@@ -154,7 +158,7 @@
         "concept": [
           {
             "code": "134401001",
-            "display": "Left ventricular cardiac dysfunction"
+            "display": "Left ventricular systolic dysfunction"
           },
           {
             "code": "395704004",
