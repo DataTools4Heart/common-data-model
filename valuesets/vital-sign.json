@@ -48,6 +48,10 @@
             "display": "Body mass index (BMI) [Ratio]"
           },
           {
+            "code": "8277-6",
+            "display": "Body surface area (BSA) [Ratio]"
+          },
+          {
             "code": "8480-6",
             "display": "Systolic blood pressure"
           },

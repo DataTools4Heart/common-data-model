@@ -1,6 +1,7 @@
 {
   "resources": [
     {
+
       "resource": "AdverseEvent",
       "shardKey": ["subject"],
       "indexes": []
@@ -205,33 +206,11 @@
       "indexes": []
     },
     {
-      "resource": "EffectEvidenceSynthesis",
-      "shardKey": ["_id"],
-      "indexes": [
-        {"parameters": ["url"]}
-      ]
-    },
-    {
       "resource": "Encounter",
       "shardKey": ["subject"],
       "indexes": [
         {"parameters": ["service-provider","date"]},
         {"parameters": ["participant","date"]}
-      ]
-    },
-    {
-      "resource": "Endpoint",
-      "indexes": []
-    },
-    {
-      "resource": "EnrollmentRequest",
-      "shardKey": ["subject"],
-      "indexes": []
-    },
-    {
-      "resource": "EnrollmentResponse",
-      "indexes": [
-        {"parameters": ["request"]}
       ]
     },
     {
@@ -355,19 +334,6 @@
       "indexes": []
     },
     {
-      "resource": "Measure",
-      "indexes": []
-    },
-    {
-      "resource": "MeasureReport",
-      "indexes": []
-    },
-    {
-      "resource": "Media",
-      "shardKey": ["subject"],
-      "indexes": []
-    },
-    {
       "resource": "Medication",
       "indexes": []
     },
@@ -405,11 +371,11 @@
       "shardKey": ["subject"],
       "indexes": [
         {
-          "parameters": ["subject","category"],
+          "parameters": [ "subject", "category" ],
           "description": "For category based queries during data transformation (e.g. vital signs)"
         },
         {
-          "parameters": ["subject","code"],
+          "parameters": [ "subject", "code" ],
           "description": "For code based queries during data transformation (e.g. blood pressure)"
         }
       ]
@@ -433,19 +399,14 @@
       "indexes": []
     },
     {
+      "resource": "PractitionerRole",
+      "indexes": [
+      ]
+    },
+    {
       "resource": "Procedure",
       "shardKey": ["subject"],
       "indexes": []
-    },
-    {
-      "resource": "Provenance",
-      "shardKey": ["_id"],
-      "indexes": [
-        {"parameters": ["when"]},
-        {"parameters": ["patient"]},
-        {"parameters": ["agent"]},
-        {"parameters": ["target"]}
-      ]
     },
     {
       "resource": "QuestionnaireResponse",
@@ -465,7 +426,6 @@
       "resource": "Schedule",
       "shardKey": ["actor"],
       "indexes": [
-        {"parameters": ["service-type","date"]}
       ]
     },
     {
