@@ -70,6 +70,34 @@
           {
             "code": "34534-8",
             "display": "12 lead EKG panel"
+          },
+          {
+            "code": "8310-5",
+            "display": "Body temperature"
+          },
+          {
+            "code": "9279-1",
+            "display": "Respiratory rate"
+          },
+          {
+            "code": "8280-0",
+            "display": "Waist Circumference at umbilicus by Tape measure"
+          },
+          {
+            "code": "38208-5",
+            "display": "Pain severity - Reported"
+          },
+          {
+            "code": "3150-0",
+            "display": "Inhaled oxygen concentration"
+          },
+          {
+            "code": "35088-4",
+            "display": "Glasgow coma scale"
+          },
+          {
+            "code": "60985-9",
+            "display": "Central venous pressure (CVP)"
           }
         ]
       }
