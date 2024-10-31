@@ -47,8 +47,8 @@
         "sliceName": "icdCode",
         "min": 1,
         "binding": {
-          "strength": "required",
-          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/procedure"
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10-procedures"
         }
       },
       {
