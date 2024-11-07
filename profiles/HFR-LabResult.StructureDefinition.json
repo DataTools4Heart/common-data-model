@@ -84,6 +84,12 @@
         "type": [
           {
             "code": "Quantity"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
           }
         ]
       },
