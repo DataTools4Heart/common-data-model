@@ -78,7 +78,6 @@
       {
         "id": "Condition.onset[x]",
         "path": "Condition.onset[x]",
-        "min": 1,
         "type": [
           {
             "code": "dateTime"
