@@ -6982,6 +6982,7 @@
         {
           "type": "MedicationRequest",
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+          "supportedProfile": ["https://datatools4heart.eu/fhir/StructureDefinition/HFR-MedicationRequest"],
           "interaction": [
             {
               "code": "read",
