@@ -7154,7 +7154,7 @@
         },
         {
           "type": "MedicationStatement",
-          "profile": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Prescription",
+          "profile": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-MedicationStatement",
           "interaction": [
             {
               "code": "read",

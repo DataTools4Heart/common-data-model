@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Prescription",
-  "name": "HFR_Prescription",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-MedicationStatement",
+  "name": "HFR_MedicationStatement",
   "status": "draft",
   "fhirVersion": "5.0.0",
   "kind": "resource",
