@@ -167,7 +167,7 @@
         ]
       },
       {
-        "system": "https://datatools4heart.eu/fhir/CodeSystem/echo-parameter"
+        "system": "http://datatools4heart.eu/fhir/CodeSystem/echo-parameter"
       }
     ]
   }

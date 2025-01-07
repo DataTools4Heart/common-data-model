@@ -51,6 +51,64 @@
         "min": 1
       },
       {
+        "id": "Encounter.reason",
+        "path": "Encounter.reason",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis",
+        "path": "Encounter.reason",
+        "sliceName": "admittingDiagnosis",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.use.coding",
+        "path": "Encounter.reason.use.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.use.coding.system",
+        "path": "Encounter.reason.use.coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.org/fhir/encounter-reason-use"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.use.coding.code",
+        "path": "Encounter.reason.use.coding.code",
+        "min": 1,
+        "fixedCode": "AD"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.use.coding.display",
+        "path": "Encounter.reason.use.coding.display",
+        "min": 1,
+        "fixedString": "Admitting Diagnosis"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.value",
+        "path": "Encounter.reason.value",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableReference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Condition"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.admission.origin",
         "path": "Encounter.admission.origin",
         "type": [

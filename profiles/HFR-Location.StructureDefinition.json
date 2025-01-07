@@ -1,0 +1,33 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Location",
+  "name": "HFR_Location",
+  "status": "draft",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.name",
+        "path": "Location.name",
+        "min": 1
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Organization"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

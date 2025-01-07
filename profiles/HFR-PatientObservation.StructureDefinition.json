@@ -49,6 +49,20 @@
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Organization",
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Location",
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PractitionerRole"
+            ]
+          }
+        ]
       }
     ]
   }

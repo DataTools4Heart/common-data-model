@@ -5878,6 +5878,7 @@
         {
           "type": "Location",
           "profile": "http://hl7.org/fhir/StructureDefinition/Location",
+          "supportedProfile": ["https://datatools4heart.eu/fhir/StructureDefinition/HFR-Location"],
           "interaction": [
             {
               "code": "read",

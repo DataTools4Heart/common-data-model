@@ -4,3 +4,4 @@ onfhir.conf
 logs/*
 .idea/
 onFHIRRepository.emb.mongo/*
+.simplifier

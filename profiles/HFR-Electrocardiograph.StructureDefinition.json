@@ -994,8 +994,7 @@
       {
         "id": "Observation.component:ventricularRate.value[x].unit",
         "path": "Observation.component.value[x].unit",
-        "min": 1,
-        "fixedString": "heart beats per minute"
+        "min": 1
       },
       {
         "id": "Observation.component:ventricularRate.value[x].system",
@@ -1007,7 +1006,7 @@
         "id": "Observation.component:ventricularRate.value[x].code",
         "path": "Observation.component.value[x].code",
         "min": 1,
-        "fixedCode": "{beats}/min"
+        "fixedCode": "/min"
       },
       {
         "id": "Observation.component:samplingFrequency",
@@ -1066,8 +1065,7 @@
       {
         "id": "Observation.component:samplingFrequency.value[x].unit",
         "path": "Observation.component.value[x].unit",
-        "min": 1,
-        "fixedString": "Hertz"
+        "min": 1
       },
       {
         "id": "Observation.component:samplingFrequency.value[x].system",
@@ -2187,14 +2185,35 @@
         ]
       },
       {
+        "id": "Observation.component:typeOfRhythm.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component:typeOfRhythm.value[x].coding:loincCode",
+        "path": "Observation.component.value[x].coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Observation.component:typeOfRhythm.value[x].coding:loincCode.system",
-        "path": "Observation.component.code.coding.system",
+        "path": "Observation.component.value[x].coding.system",
         "min": 1,
         "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.component:typeOfRhythm.value[x].coding:loincCode.code",
-        "path": "Observation.component.code.coding.code",
+        "path": "Observation.component.value[x].coding.code",
         "min": 1
       }
     ]
