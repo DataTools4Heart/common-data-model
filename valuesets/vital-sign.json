@@ -98,6 +98,26 @@
           {
             "code": "60985-9",
             "display": "Central venous pressure (CVP)"
+          },
+          {
+            "code": "76535-4",
+            "display": "Diastolic blood pressure by Noninvasive"
+          },
+          {
+            "code": "76536-2",
+            "display": "Mean blood pressure by Noninvasive"
+          },
+          {
+            "code": "76534-7",
+            "display": "Systolic blood pressure by Noninvasive"
+          },
+          {
+            "code": "59408-5",
+            "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+          },
+          {
+            "code": "89270-3",
+            "display": "Body mass index (BMI) [Ratio] Estimated"
           }
         ]
       }
