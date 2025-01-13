@@ -40,24 +40,132 @@
             "display": "Body surface area Measured"
           },
           {
+            "code": "8867-4",
+            "display": "Heart rate"
+          },
+          {
             "code": "8806-2",
             "display": "Left ventricular Ejection fraction by 2D echo"
+          },
+          {
+            "code": "79990-8",
+            "display": "Left ventricular Ejection fraction by US.3D.segmentation"
+          },
+          {
+            "code": "79992-4",
+            "display": "Left ventricular Ejection fraction by US.2D.A2C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "79993-2",
+            "display": "Left ventricular Ejection fraction by US.2D.A4C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "79991-6",
+            "display": "Left ventricular Ejection fraction by US.2D+Calculated by biplane method of disks"
+          },
+          {
+            "code": "77890-2",
+            "display": "Left ventricular Ejection fraction by US.2D+Calculated by cube method"
+          },
+          {
+            "code": "93644-3",
+            "display": "Left ventricular Ejection fraction by US.2D.A2C+Calc by single plane area-length method"
+          },
+          {
+            "code": "93645-0",
+            "display": "Left ventricular Ejection fraction by US.2D.A4C+Calc by single plane area-length method"
+          },
+          {
+            "code": "77891-0",
+            "display": "Left ventricular Ejection fraction by US.2D+Calculated by Teichholz method"
           },
           {
             "code": "75988-6",
             "display": "Left ventricular End diastolic volume"
           },
           {
+            "code": "79995-7",
+            "display": "Left ventricular End-diastolic volume by US.3D.segmentation"
+          },
+          {
+            "code": "79998-1",
+            "display": "Left ventricular End-diastolic volume by US.2D.A2C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "79999-9",
+            "display": "Left ventricular End-diastolic volume by US.2D.A4C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "79996-5",
+            "display": "Left ventricular End-diastolic volume by US.2D+Calculated by biplane method of disks"
+          },
+          {
+            "code": "20235-8",
+            "display": "Left ventricular End-diastolic volume by US.cubed.calculated"
+          },
+          {
+            "code": "93660-9",
+            "display": "Left ventricular End-diastolic volume by US.2D.A2C+Calc by single plane area-length method"
+          },
+          {
+            "code": "93661-7",
+            "display": "Left ventricular End-diastolic volume by US.2D.A4C+Calc by single plane area-length method"
+          },
+          {
+            "code": "76549-5",
+            "display": "Left ventricular End-diastolic volume by US.2D+Calculated by Teichholz method"
+          },
+          {
             "code": "75989-4",
             "display": "Left ventricular End systolic volume"
+          },
+          {
+            "code": "80000-3",
+            "display": "Left ventricular End-systolic volume by US.3D.segmentation"
+          },
+          {
+            "code": "80003-7",
+            "display": "Left ventricular End-systolic volume by US.2D.A2C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "80004-5",
+            "display": "Left ventricular End-systolic volume by US.2D.A4C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "80001-1",
+            "display": "Left ventricular End-systolic volume by US.2D+Calculated by biplane method of disks"
+          },
+          {
+            "code": "76553-7",
+            "display": "Left ventricular End-systolic volume by US.2D+Calculated by cube method"
+          },
+          {
+            "code": "93657-5",
+            "display": "Left ventricular End-systolic volume by US.2D.A2C+Calc by single plane area-length method"
+          },
+          {
+            "code": "93658-3",
+            "display": "Left ventricular End-systolic volume by US.2D.A4C+Calc by single plane area-length method"
+          },
+          {
+            "code": "29465-2",
+            "display": "Left ventricular End-systolic volume by US.Teichholz.calculated"
           },
           {
             "code": "18083-6",
             "display": "Left ventricular Internal diameter minor axis diastole by US 2D"
           },
           {
+            "code": "29436-3",
+            "display": "Left ventricular Internal diameter minor axis diastole by US"
+          },
+          {
             "code": "18085-1",
             "display": "Left ventricular Internal diameter minor axis systole by US 2D"
+          },
+          {
+            "code": "29438-9",
+            "display": "Left ventricular Internal diameter minor axis systole by US"
           },
           {
             "code": "10231-9",
@@ -69,7 +177,7 @@
           },
           {
             "code": "79971-8",
-            "display": "Interventricular septum thickness at end systole by US 2D"
+            "display": "Interventricular septum Thickness at end systole by US 2D"
           },
           {
             "code": "99528-2",
@@ -80,20 +188,28 @@
             "display": "Left ventricular posterior wall Thickness at end diastole by US 2D"
           },
           {
+            "code": "18152-9",
+            "display": "Left ventricular posterior wall Thickness during diastole by US"
+          },
+          {
             "code": "80034-2",
             "display": "Left ventricular posterior wall Thickness at end systole by US 2D"
           },
           {
-            "code": "18155-2",
-            "display": "Left ventricular Thickness septal wall/Thickness posterior wall by US"
+            "code": "29445-4",
+            "display": "Left ventricular posterior wall Thickness during systole by US.M-mode"
           },
           {
             "code": "29440-5",
             "display": "Left ventricular Thickness septal wall/Thickness posterior wall by US 2D"
           },
           {
+            "code": "18155-2",
+            "display": "Left ventricular Thickness septal wall/Thickness posterior wall by US"
+          },
+          {
             "code": "79915-5",
-            "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW"
+            "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW\t"
           },
           {
             "code": "79911-4",
@@ -104,8 +220,32 @@
             "display": "Left ventricular E-wave/A-wave by US"
           },
           {
+            "code": "78186-4",
+            "display": "Mitral valve lateral annulus Tissue velocity.E-wave.max by US.tissue doppler"
+          },
+          {
             "code": "78190-6",
             "display": "Mitral valve lateral annulus E-wave/Tissue velocity.E-wave.max by US.doppler+tissue doppler"
+          },
+          {
+            "code": "81386-5",
+            "display": "Mitral valve Maximum E-wave velocity/Tissue velocity.E-wave.max by US.doppler+tissue doppler"
+          },
+          {
+            "code": "80065-6",
+            "display": "Mitral valve A-wave duration by US.doppler"
+          },
+          {
+            "code": "80066-4",
+            "display": "Mitral valve Maximum A-wave velocity by US.doppler"
+          },
+          {
+            "code": "81384-0",
+            "display": "Mitral valve annulus Tissue velocity.E-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "18038-0",
+            "display": "Mitral valve Peak E wave/Peak A wave by US.doppler"
           },
           {
             "code": "77903-3",
@@ -116,8 +256,44 @@
             "display": "Tricuspid valve Peak systolic flow velocity by US.doppler"
           },
           {
+            "code": "18006-7",
+            "display": "Inferior vena cava Diameter by US"
+          },
+          {
+            "code": "29459-5",
+            "display": "Inferior vena cava Diameter by US --expiration"
+          },
+          {
+            "code": "29429-8",
+            "display": "Inferior vena cava Diameter by US --inspiration"
+          },
+          {
             "code": "17977-0",
             "display": "Left atrial Area by US.2D.A4C"
+          },
+          {
+            "code": "79973-4",
+            "display": "Left atrial Area at end systole by US.2D.A2C+Measured by planimetry"
+          },
+          {
+            "code": "79974-2",
+            "display": "Left atrial Area at end systole by US.2D.A4C+Measured by planimetry"
+          },
+          {
+            "code": "29469-4",
+            "display": "Left atrial Major axis diameter anterior-posterior systole by US 2D"
+          },
+          {
+            "code": "79975-9",
+            "display": "Left atrial Minor axis at end systole [Length] by US 2D"
+          },
+          {
+            "code": "80077-1",
+            "display": "Right atrial Minor axis at end systole [Length] by US.2D.A4C"
+          },
+          {
+            "code": "93643-5",
+            "display": "Right ventricular Major axis diastole [Length] by US.2D.A4C"
           },
           {
             "code": "29468-6",
@@ -136,20 +312,24 @@
             "display": "Left atrial End-systolic volume by US.2D+Calculated by modified Simpson method"
           },
           {
+            "code": "79983-3",
+            "display": "Left atrial End-systolic volume by US.2D+Calculated by biplane method of disks"
+          },
+          {
+            "code": "79985-8",
+            "display": "Left atrial End-systolic volume by US.2D.A2C+Calculated by single plane method of disks"
+          },
+          {
+            "code": "79986-6",
+            "display": "Left atrial End-systolic volume by US.2D.A4C+Calculated by single plane method of disks"
+          },
+          {
             "code": "80075-5",
             "display": "Right atrial Area at end systole by US.2D.A4C+Measured by planimetry"
           },
           {
             "code": "93635-1",
             "display": "Right atrial End-systolic volume by US.2D.A4C"
-          },
-          {
-            "code": "79997-3",
-            "display": "Left ventricular End-diastolic volume/Body surface area"
-          },
-          {
-            "code": "8785-8",
-            "display": "Left ventricular Stroke volume index by 2D echo"
           }
         ]
       },
