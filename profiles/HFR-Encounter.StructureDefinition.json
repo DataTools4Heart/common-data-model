@@ -97,10 +97,20 @@
       {
         "id": "Encounter.reason:admittingDiagnosis.value",
         "path": "Encounter.reason.value",
+        "min": 1
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.value.concept",
+        "path": "Encounter.reason.value.concept",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.reason:admittingDiagnosis.value.reference",
+        "path": "Encounter.reason.value.reference",
         "min": 1,
         "type": [
           {
-            "code": "CodeableReference",
+            "code": "Reference",
             "targetProfile": [
               "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Condition"
             ]
