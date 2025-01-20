@@ -60,11 +60,11 @@
             "display": "Unknown if ever smoked"
           },
           {
-            "code": "428071000124103",
+            "code": "230063004",
             "display": "Current Heavy tobacco smoker"
           },
           {
-            "code": "428061000124105",
+            "code": "230060001",
             "display": "Current Light tobacco smoker"
           }
         ]
