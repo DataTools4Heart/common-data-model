@@ -79,12 +79,38 @@
       {
         "id": "ServiceRequest.reason",
         "path": "ServiceRequest.reason",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference.id"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.reason:referralReason",
+        "path": "ServiceRequest.reason",
+        "sliceName": "referralReason"
+      },
+      {
+        "id": "ServiceRequest.reason:referralReason.concept",
+        "path": "ServiceRequest.reason.concept",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reason:referralReason.reference",
+        "path": "ServiceRequest.reason.reference",
+        "min": 1,
         "type": [
           {
-            "code": "CodeableReference",
+            "code": "Reference",
             "targetProfile": [
               "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Condition",
-              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PatientObservation"
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PatientObservation",
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Procedure",
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-DocumentReference"
             ]
           }
         ]

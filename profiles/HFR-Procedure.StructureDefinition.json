@@ -111,9 +111,33 @@
       {
         "id": "Procedure.reason",
         "path": "Procedure.reason",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference.id"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.reason:procedureReason",
+        "path": "Procedure.reason",
+        "sliceName": "procedureReason"
+      },
+      {
+        "id": "Procedure.reason:procedureReason.concept",
+        "path": "Procedure.reason.concept",
+        "max": "0"
+      },
+      {
+        "id": "Procedure.reason:procedureReason.reference",
+        "path": "Procedure.reason.reference",
+        "min": 1,
         "type": [
           {
-            "code": "CodeableReference",
+            "code": "Reference",
             "targetProfile": [
               "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Condition",
               "https://datatools4heart.eu/fhir/StructureDefinition/HFR-PatientObservation",

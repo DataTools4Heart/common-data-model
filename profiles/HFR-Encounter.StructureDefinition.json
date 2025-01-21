@@ -57,7 +57,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "use.coding.code"
+              "path": "value.reference.id"
             }
           ],
           "rules": "open"
