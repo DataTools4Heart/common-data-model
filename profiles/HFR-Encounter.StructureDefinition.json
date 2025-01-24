@@ -57,7 +57,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "value.reference.id"
+              "path": "use.coding.code"
             }
           ],
           "rules": "open"
@@ -87,12 +87,6 @@
         "path": "Encounter.reason.use.coding.code",
         "min": 1,
         "fixedCode": "AD"
-      },
-      {
-        "id": "Encounter.reason:admittingDiagnosis.use.coding.display",
-        "path": "Encounter.reason.use.coding.display",
-        "min": 1,
-        "fixedString": "Admitting Diagnosis"
       },
       {
         "id": "Encounter.reason:admittingDiagnosis.value",
