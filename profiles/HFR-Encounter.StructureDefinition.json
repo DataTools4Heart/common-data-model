@@ -90,8 +90,7 @@
       {
         "id": "Encounter.reason:admittingDiagnosis.value",
         "path": "Encounter.reason.value",
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "Encounter.reason:admittingDiagnosis.value.concept",
