@@ -93,8 +93,7 @@
         "id": "ServiceRequest.reason:referralReason",
         "path": "ServiceRequest.reason",
         "sliceName": "referralReason",
-        "min": 1,
-        "max": "1"
+        "min": 1
       },
       {
         "id": "ServiceRequest.reason:referralReason.concept",
