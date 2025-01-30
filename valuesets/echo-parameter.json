@@ -330,6 +330,186 @@
           {
             "code": "93635-1",
             "display": "Right atrial End-systolic volume by US.2D.A4C"
+          },
+          {
+            "code": "18169-3",
+            "display": "Aortic valve Blood velocity-time integral by US.doppler"
+          },
+          {
+            "code": "93640-1",
+            "display": "Left atrial End-systolic volume by US.2D.A2C+Calc by single plane area-length method"
+          },
+          {
+            "code": "77907-4",
+            "display": "Left atrial End-systolic volume/Body surface area [Volume/Area] by US.2D+Calculated by area-length method"
+          },
+          {
+            "code": "93641-9",
+            "display": "Left atrial End-systolic volume by US.2D.A4C+Calc by single plane area-length method"
+          },
+          {
+            "code": "79981-7",
+            "display": "Left atrial End-systolic volume by US.2D+Calculated by biplane area-length method"
+          },
+          {
+            "code": "79917-1",
+            "display": "Pulmonary vein Maximum S-wave velocity by Ultrasound.doppler.PW"
+          },
+          {
+            "code": "78184-9",
+            "display": "Pulmonary vein A-wave duration by Ultrasound.doppler.PW"
+          },
+          {
+            "code": "29453-8",
+            "display": "Pulmonary vein Maximum A wave reversal by US.doppler"
+          },
+          {
+            "code": "79916-3",
+            "display": "Pulmonary vein Maximum D-wave velocity by Ultrasound.doppler.PW"
+          },
+          {
+            "code": "80062-3",
+            "display": "Mitral valve Maximum regurgitant blood flow velocity during systole by US.doppler continuous wave"
+          },
+          {
+            "code": "78185-6",
+            "display": "Mitral valve medial annulus Tissue velocity.E-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "81397-2",
+            "display": "Mitral valve lateral annulus Tissue velocity.A-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "17993-7",
+            "display": "Mitral valve Cardiac output by US.doppler"
+          },
+          {
+            "code": "18035-6",
+            "display": "Mitral valve regurgitant jet dP/dT (1M/S to 3 M/S) [Pressure rate] by US.doppler continuous wave"
+          },
+          {
+            "code": "18097-6",
+            "display": "Mitral valve Minimum orifice area by US.doppler pressure half time"
+          },
+          {
+            "code": "79912-2",
+            "display": "Mitral valve Pressure half time during diastole by US.doppler"
+          },
+          {
+            "code": "80058-1",
+            "display": "Mitral valve Maximum pressure gradient dur systole by US.doppler+Calculated by simplified Bernoulli"
+          },
+          {
+            "code": "80059-9",
+            "display": "Mitral valve PISA radius during systole [Length] by US.2D+doppler"
+          },
+          {
+            "code": "20270-5",
+            "display": "Mitral valve Acceleration by US.doppler"
+          },
+          {
+            "code": "18059-6",
+            "display": "Mitral valve Mean pressure gradient by US.doppler"
+          },
+          {
+            "code": "82340-1",
+            "display": "Mitral valve Closure to opening [Time] by US.doppler"
+          },
+          {
+            "code": "78188-0",
+            "display": "Mitral valve lateral annulus Tissue velocity.S-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "77914-0",
+            "display": "Mitral valve Effective regurgitant orifice area by US.doppler+Calculated by volumetric method"
+          },
+          {
+            "code": "29448-8",
+            "display": "Mitral valve Effective regurgitant orifice area by US.doppler+Calculated by PISA method"
+          },
+          {
+            "code": "80057-3",
+            "display": "Mitral valve Maximum regurgitant blood flow rate during systole by US.doppler+Calculated by PISA method"
+          },
+          {
+            "code": "78187-2",
+            "display": "Mitral valve medial annulus Tissue velocity.S-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "93628-6",
+            "display": "Mitral valve Regurgitant blood velocity-time integral by US.doppler"
+          },
+          {
+            "code": "78189-8",
+            "display": "Mitral valve medial annulus E-wave/Tissue velocity.E-wave.max by US.doppler+tissue doppler"
+          },
+          {
+            "code": "82595-0",
+            "display": "Mitral valve leaflet tip Velocity-time integral (VTI) for the area under A wave by US.doppler"
+          },
+          {
+            "code": "82594-3",
+            "display": "Mitral valve leaflet tip Velocity-time integral (VTI) for the area under E wave by US.doppler"
+          },
+          {
+            "code": "17999-4",
+            "display": "Mitral valve Deceleration [Time] by US.doppler"
+          },
+          {
+            "code": "81396-4",
+            "display": "Mitral valve medial annulus Tissue velocity.A-wave.max by US.tissue doppler"
+          },
+          {
+            "code": "18002-6",
+            "display": "Mitral valve Deceleration slope [Acceleration] by US.doppler"
+          },
+          {
+            "code": "18053-9",
+            "display": "Left ventricular posterior wall Thickening.fractional change by US"
+          },
+          {
+            "code": "20232-5",
+            "display": "Left ventricular outflow tract Mean blood flow velocity by US.doppler"
+          },
+          {
+            "code": "93633-6",
+            "display": "Heart Left ventricular outflow tract/Maximum blood flow aortic valve by US.doppler"
+          },
+          {
+            "code": "20233-3",
+            "display": "Left ventricular outflow tract Mean systole pressure gradient by US.doppler"
+          },
+          {
+            "code": "93632-8",
+            "display": "Heart Left ventricular outflow tract/Aortic valve VTI by US.doppler"
+          },
+          {
+            "code": "18064-6",
+            "display": "Left ventricular outflow tract Maximum pressure gradient dur systole by US.doppler"
+          },
+          {
+            "code": "79997-3",
+            "display": "Left ventricular End-diastolic volume (by US.2D+Calculated by biplane method of disks)/Body surface area"
+          },
+          {
+            "code": "80002-9",
+            "display": "Left ventricular End-systolic volume (by US.2D+Calculated by biplane method of disks)/Body surface area"
+          },
+          {
+            "code": "80076-3",
+            "display": "Right atrial Major axis at end systole [Length] by US.2D.A4C"
+          },
+          {
+            "code": "18079-4",
+            "display": "Right ventricular Minimum major axis during systole [Length] by US 2D"
+          },
+          {
+            "code": "18166-9",
+            "display": "Tricuspid valve Maximum regurgitant blood flow velocity during systole by US.doppler"
+          },
+          {
+            "code": "20350-5",
+            "display": "Tricuspid valve Mean blood flow velocity by US.doppler"
           }
         ]
       },

@@ -104,6 +104,10 @@
             "display": "Diastolic blood pressure by Noninvasive"
           },
           {
+            "code": "8478-0",
+            "display": "Mean blood pressure"
+          },
+          {
             "code": "76536-2",
             "display": "Mean blood pressure by Noninvasive"
           },
@@ -118,6 +122,22 @@
           {
             "code": "89270-3",
             "display": "Body mass index (BMI) [Ratio] Estimated"
+          },
+          {
+            "code": "76213-8",
+            "display": "Invasive Diastolic blood pressure"
+          },
+          {
+            "code": "76215-3",
+            "display": "Invasive Systolic blood pressure"
+          },
+          {
+            "code": "60982-6",
+            "display": "Aorta Diastolic blood pressure"
+          },
+          {
+            "code": "60984-2",
+            "display": "Aorta Diastolic blood pressure"
           }
         ]
       }
