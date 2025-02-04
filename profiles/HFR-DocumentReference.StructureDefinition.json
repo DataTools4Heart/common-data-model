@@ -26,6 +26,11 @@
         ]
       },
       {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "min": 1
+      },
+      {
         "id": "DocumentReference.context",
         "path": "DocumentReference.context",
         "type": [
