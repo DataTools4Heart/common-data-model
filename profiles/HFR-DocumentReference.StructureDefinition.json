@@ -13,6 +13,11 @@
   "differential": {
     "element": [
       {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "min": 1
+      },
+      {
         "id": "DocumentReference.subject",
         "path": "DocumentReference.subject",
         "min": 1,
@@ -24,11 +29,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "DocumentReference.type",
-        "path": "DocumentReference.type",
-        "min": 1
       },
       {
         "id": "DocumentReference.context",
