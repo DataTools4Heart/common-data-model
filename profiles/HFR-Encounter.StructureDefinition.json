@@ -66,8 +66,7 @@
       {
         "id": "Encounter.reason:admittingDiagnosis",
         "path": "Encounter.reason",
-        "sliceName": "admittingDiagnosis",
-        "min": 1
+        "sliceName": "admittingDiagnosis"
       },
       {
         "id": "Encounter.reason:admittingDiagnosis.use.coding",

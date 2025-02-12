@@ -92,8 +92,7 @@
       {
         "id": "ServiceRequest.reason:referralReason",
         "path": "ServiceRequest.reason",
-        "sliceName": "referralReason",
-        "min": 1
+        "sliceName": "referralReason"
       },
       {
         "id": "ServiceRequest.reason:referralReason.concept",

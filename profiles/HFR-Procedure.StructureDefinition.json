@@ -124,8 +124,7 @@
       {
         "id": "Procedure.reason:procedureReason",
         "path": "Procedure.reason",
-        "sliceName": "procedureReason",
-        "min": 1
+        "sliceName": "procedureReason"
       },
       {
         "id": "Procedure.reason:procedureReason.concept",
