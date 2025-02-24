@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "symptom",
-  "url": "https://datatools4heart.eu/fhir/ValueSet/symptom",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/symptoms",
   "version": "1.0",
   "name": "Symptom",
   "status": "draft",
