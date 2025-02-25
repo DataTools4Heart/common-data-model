@@ -127,6 +127,9 @@
             "code": "Quantity"
           },
           {
+            "code": "CodeableConcept"
+          },
+          {
             "code": "string"
           },
           {
