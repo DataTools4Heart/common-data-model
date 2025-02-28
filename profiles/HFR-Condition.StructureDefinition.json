@@ -12,6 +12,18 @@
   "differential": {
     "element": [
       {
+        "id": "Condition",
+        "path": "Condition",
+        "constraint": [
+          {
+            "key": "cond-1",
+            "severity": "error",
+            "expression": "category.where(coding.system='http://terminology.hl7.org/CodeSystem/condition-category' and coding.code='encounter-diagnosis').exists() implies encounter.exists()",
+            "human": "If category is 'encounter-diagnosis', then encounter must be present."
+          }
+        ]
+      },
+      {
         "id": "Condition.code",
         "path": "Condition.code",
         "min": 1
