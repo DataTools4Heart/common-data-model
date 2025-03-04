@@ -67,7 +67,6 @@
       {
         "id": "Observation.code.coding:loincCode.display",
         "path": "Observation.code.coding.display",
-        "min": 1,
         "fixedString": "Cause of death"
       },
       {
@@ -136,22 +135,71 @@
             }
           ],
           "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component.code.coding:loincCode",
+        "path": "Observation.component.code.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component.code.coding:loincCode.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.component.code.coding:loincCode.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1,
+        "fixedCode": "69453-9"
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.component.value[x].coding:contributingICD10Code",
+        "path": "Observation.component.value[x].coding",
+        "sliceName": "contributingICD10Code",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/icd-10-cm"
         }
       },
       {
-        "id": "Observation.component.code.coding:contributingICD10Code",
-        "path": "Observation.component.code.coding",
-        "sliceName": "contributingICD10Code"
-      },
-      {
-        "id": "Observation.component.code.coding:contributingICD10Code.system",
-        "path": "Observation.component.code.coding.system",
+        "id": "Observation.component.value[x].coding:contributingICD10Code.system",
+        "path": "Observation.component.value[x].coding.system",
         "min": 1,
         "fixedUri": "http://hl7.org/fhir/sid/icd-10"
       },
       {
-        "id": "Observation.component.code.coding:contributingICD10Code.code",
-        "path": "Observation.component.code.coding.code",
+        "id": "Observation.component.value[x].coding:contributingICD10Code.code",
+        "path": "Observation.component.value[x].coding.code",
         "min": 1
       }
     ]
