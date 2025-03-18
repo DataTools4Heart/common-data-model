@@ -64,7 +64,8 @@
               "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Encounter"
             ]
           }
-        ]
+        ],
+        "min": 1
       },
       {
         "id": "MedicationAdministration.occurence[x]",
