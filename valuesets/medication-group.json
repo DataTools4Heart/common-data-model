@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medication-group",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/medication-group",
+  "version": "1.0",
+  "name": "Medication Group",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-04-08",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Medication groups used for heart failure research in DataTools4Heart and AI4HF projects.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://datatools4heart.eu/fhir/CodeSystem/medication-group",
+        "concept": [
+          {
+            "code": "RASi",
+            "display": "RASi (RAS-inhibitors)"
+          },
+          {
+            "code": "ACEI",
+            "display": "ACEI (ACE-inhibitors)"
+          },
+          {
+            "code": "ARB",
+            "display": "ARB (Angiotensin receptor blocker)"
+          },
+          {
+            "code": "ARNI",
+            "display": "ARNI (Angiotensin receptor/neprilysin inhibitor, sacubitril/valsartan)"
+          },
+          {
+            "code": "MRA",
+            "display": "MRA (Mineralcorticoid Receptor Antagonis)"
+          },
+          {
+            "code": "Diuretics",
+            "display": "Diuretics"
+          },
+          {
+            "code": "LD",
+            "display": "LD (Loop Diuretics)"
+          },
+          {
+            "code": "CCB",
+            "display": "CCB (Calcium Channel Blockers)"
+          },
+          {
+            "code": "VasoD",
+            "display": "VasoD (Vasodilators used in cardiac diseases)"
+          },
+          {
+            "code": "PI",
+            "display": "PI (Platelet inhibitor)"
+          },
+          {
+            "code": "OAC",
+            "display": "OAC (Oral anticoagulants)"
+          },
+          {
+            "code": "Statins",
+            "display": "Statins"
+          },
+          {
+            "code": "Digoxin",
+            "display": "Digoxin (Digitalis glycosides)"
+          },
+          {
+            "code": "BB",
+            "display": "BB (Betablockers)"
+          },
+          {
+            "code": "AAD",
+            "display": "AAD (Class 1 and 3 antiarrhytmic drugs)"
+          },
+          {
+            "code": "Ivabradine",
+            "display": "Ivabradine"
+          },
+          {
+            "code": "SGLT2I",
+            "display": "SGLT2I (SGLT-2 Inhibitor)"
+          }
+        ]
+      }
+    ]
+  }
+}

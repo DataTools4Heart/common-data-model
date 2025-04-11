@@ -12,6 +12,18 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationAdministration",
+        "path": "MedicationAdministration",
+        "constraint": [
+          {
+            "key": "cond-1",
+            "severity": "error",
+            "expression": "medication.concept.coding.where(system = 'http://www.whocc.no/atc').exists() or medication.concept.coding.where(system = 'https://datatools4heart.eu/fhir/CodeSystem/medication-group').exists()",
+            "human": "Either ATC code or ATC group code must be present."
+          }
+        ]
+      },
+      {
         "id": "MedicationAdministration.medication.concept.coding",
         "path": "MedicationAdministration.medication.concept.coding",
         "slicing": {
@@ -28,8 +40,7 @@
       {
         "id": "MedicationAdministration.medication.concept.coding:atcCode",
         "path": "MedicationAdministration.medication.concept.coding",
-        "sliceName": "atcCode",
-        "min": 1
+        "sliceName": "atcCode"
       },
       {
         "id": "MedicationAdministration.medication.concept.coding:atcCode.system",
@@ -41,6 +52,26 @@
         "id": "MedicationAdministration.medication.concept.coding:atcCode.code",
         "path": "MedicationAdministration.medication.concept.coding.code",
         "min": 1
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCodeGroup",
+        "path": "MedicationAdministration.medication.concept.coding",
+        "sliceName": "atcCodeGroup"
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCodeGroup.system",
+        "path": "MedicationAdministration.medication.concept.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/medication-group"
+      },
+      {
+        "id": "MedicationAdministration.medication.concept.coding:atcCodeGroup.code",
+        "path": "MedicationAdministration.medication.concept.coding.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/medication-group"
+        }
       },
       {
         "id": "MedicationAdministration.subject",

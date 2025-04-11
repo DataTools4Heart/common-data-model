@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR_MedicationGroup",
+  "name": "HFR_MedicationGroup",
+  "status": "draft",
+  "description": "Medication Group",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationAdministration.medication.concept.coding"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/HFR_MedicationGroup"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:hfrMedicationGroup",
+        "path": "Extension.value[x].coding",
+        "sliceName": "hfrMedicationGroup",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/medication-group"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:hfrMedicationGroup.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/medication-group"
+      },
+      {
+        "id": "Extension.value[x].coding:hfrMedicationGroup.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      }
+    ]
+  }
+}
