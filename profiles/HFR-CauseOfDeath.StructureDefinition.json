@@ -199,8 +199,7 @@
       {
         "id": "Observation.component.value[x].coding:contributingICD10Code.code",
         "path": "Observation.component.value[x].coding.code",
-        "min": 1,
-        "fixedCode": "69453-9"
+        "min": 1
       }
     ]
   }
