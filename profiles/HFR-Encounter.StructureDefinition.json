@@ -132,6 +132,16 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Encounter.serviceType.reference",
+        "path": "Encounter.serviceType.reference",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.serviceType.concept.coding.system",
+        "path": "Encounter.serviceType.concept",
+        "fixedUri": "http://snomed.info/sct"
       }
     ]
   }
