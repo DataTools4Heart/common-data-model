@@ -1,0 +1,95 @@
+{
+    "resourceType": "ValueSet",
+    "id": "rhc-parameter",
+    "url": "https://datatools4heart.eu/fhir/ValueSet/rhc-parameter",
+    "version": "1.0",
+    "name": "RHCParameter",
+    "status": "draft",
+    "experimental": false,
+    "date": "2025-11-13",
+    "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+    "contact": [
+        {
+            "name": "DataTools4Heart WP2 Team",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://datatools4heart.eu/"
+                }
+            ]
+        },
+        {
+            "name": "AI4HF WP2 Team",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://ai4hf.com/"
+                }
+            ]
+        }
+    ],
+    "compose": {
+        "include": [
+            {
+                "system": "http://loinc.org",
+                "concept": [
+                    {
+                        "code": "75994-4",
+                        "display": "Pulmonary artery wedge pressure (PCWP)"
+                    },
+                    {
+                        "code": "8414-5",
+                        "display": "Pulmonary artery Mean blood pressure (mPAP)"
+                    },
+                    {
+                        "code": "8440-0",
+                        "display": "Pulmonary artery Systolic blood pressure (PASP)"
+                    },
+                    {
+                        "code": "8385-7",
+                        "display": "Pulmonary artery Diastolic blood pressure (PADP)"
+                    },                    
+                    {
+                        "code": "60996-6",
+                        "display": "Right atrial pressure (RAP)"
+                    },
+                    {
+                        "code": "60985-9",
+                        "display": "Central venous pressure (CVP)"
+                    },
+                    {
+                        "code": "8828-6",
+                        "display": "Pulmonary vascular resistance (PVR)"
+                    },
+                    {
+                        "code": "8831-0",
+                        "display": "Systemic vascular resistance (SVR)"
+                    },
+                    {
+                        "code": "95933-8",
+                        "display": "Transpulmonary pressure gradient (TPG)"
+                    },
+                    {
+                        "code": "8741-1",
+                        "display": "Cardiac output (CO)"
+                    },
+                    {
+                        "code": "20562-5",
+                        "display": "Left ventricular Stroke volume (SV)"
+                    },
+                    {
+                        "code": "8432-7",
+                        "display": "Right ventricular Intrachamber systolic pressure (RVSP)"
+                    },
+                    {
+                        "code": "8377-4",
+                        "display": "Right ventricular Intrachamber diastolic pressure (RVDP)"
+                    }
+                ]
+            },
+            {
+                "system": "https://datatools4heart.eu/fhir/CodeSystem/rhc-parameter"
+            }
+        ]
+    }
+}

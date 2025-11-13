@@ -1,0 +1,61 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "rhc-parameter",
+    "url": "https://datatools4heart.eu/fhir/CodeSystem/rhc-parameter",
+    "version": "1.0",
+    "name": "RHC parameters",
+    "title": "RHC parameters",
+    "status": "draft",
+    "date": "2025-11-13",
+    "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+    "contact": [
+        {
+            "name": "DataTools4Heart WP2 Team",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://datatools4heart.eu/"
+                }
+            ]
+        },
+        {
+            "name": "AI4HF WP2 Team",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://ai4hf.com/"
+                }
+            ]
+        }
+    ],
+    "description": "List of right heart catheterization (RHC) parameters used in heart failure research.",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "COi",
+            "display": "Cardiac output index (COi)"
+        },
+        {
+            "code": "DPG",
+            "display": "Diastolic pulmonary gradient",
+            "definition": "Diastolic pulmonary gradient (mmHg)"
+        },
+        {
+            "code": "SVi",
+            "display": "Left ventricular Stroke volume index (SVi)"
+        },
+        {
+            "code": "PVRi",
+            "display": "Pulmonary vascular resistance index (PVRi)"
+        },
+        {
+            "code": "SVRi",
+            "display": "Systemic vascular resistance index (SVRi)"
+        },
+        {
+            "code": "PAPi",
+            "display": "Pulmonary artery pulsatility index (PAPi)"
+        }
+    ]
+}

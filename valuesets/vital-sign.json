@@ -126,6 +126,14 @@
           {
             "code": "60984-2",
             "display": "Aorta Systolic blood pressure"
+          },
+          {
+            "code": "103749-8",
+            "display": "Oxygen consumption (VO2) --peak"
+          },
+          {
+            "code": "19224-5",
+            "display": "Oxygen saturation in Mixed venous blood"
           }
         ]
       }

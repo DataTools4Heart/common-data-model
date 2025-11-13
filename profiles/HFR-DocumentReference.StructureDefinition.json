@@ -46,11 +46,6 @@
         "id": "DocumentReference.content.attachment.contentType",
         "path": "DocumentReference.content.attachment.contentType",
         "min": 1
-      },
-      {
-        "id": "DocumentReference.content.attachment.language",
-        "path": "DocumentReference.content.attachment.language",
-        "min": 1
       }
     ]
   }

@@ -59,9 +59,25 @@
             "display": "Right ventricular End-systolic volume by Imaging"
           },
           {
+            "code": "8811-2",
+            "display": "Left ventricular Ejection fraction by MR"
+          },
+          {
             "code": "8818-7",
             "display": "Right ventricular Ejection fraction by MR"
-          }
+          },
+          {
+            "code": "106760-2",
+            "display": "Left ventricular Mass by MR"
+          },
+          {
+            "code": "8867-4",
+            "display": "Heart rate"
+          },
+          {
+            "code": "8741-1",
+            "display": "Left ventricular Cardiac output"
+          }          
         ]
       }
     ]
