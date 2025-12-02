@@ -131,17 +131,7 @@
       "code": "LGE-RV",
       "display": "Presence LGE in RV",
       "definition": "Presence LGE in RV (boolean)"
-    },
-    {
-      "code": "MRI-LGE-LV",
-      "display": "LGE value in LV from MRI",
-      "definition": "LGE value in LV from MRI (%)"
-    },
-    {
-      "code": "MRI-LGE-RV",
-      "display": "LGE value in RV from MRI",
-      "definition": "LGE value in RV from MRI (%)"
-    },    
+    },   
     {
       "code": "ECV",
       "display": "Extracellular volume",
