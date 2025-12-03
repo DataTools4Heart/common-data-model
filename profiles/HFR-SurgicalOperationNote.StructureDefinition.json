@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-SurgicalOperationNote",
+  "name": "HFR_SurgicalOperationNote",
+  "status": "draft",
+  "description": "Represents the notes taken during a surgical operation.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding:loincCode",
+        "path": "Composition.type.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/doc-typecodes"
+        }
+      },
+      {
+        "id": "Composition.type.coding:loincCode.system",
+        "path": "Composition.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.type.coding:loincCode.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "11504-8"
+      },
+      {
+        "id": "Composition.type.coding:loincCode.display",
+        "path": "Composition.type.coding.display",
+        "min": 1,
+        "fixedString": "Surgical operation note"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:patientSummary",
+        "path": "Composition.section",
+        "sliceName": "patientSummary",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:patientSummary.title",
+        "path": "Composition.section.title",
+        "fixedString": "Patient summary related to the surgical operation"
+      },
+      {
+        "id": "Composition.section:patientSummary.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5",
+              "display": "Patient summary Document"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:patientSummary.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:patientSummary.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      },
+      {
+        "id": "Composition.section:operationNote",
+        "path": "Composition.section",
+        "sliceName": "operationNote",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:operationNote.title",
+        "path": "Composition.section.title",
+        "fixedString": "Operation Details"
+      },
+      {
+        "id": "Composition.section:operationNote.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29554-3",
+              "display": "Procedure Narrative"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:operationNote.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:operationNote.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      },
+      {
+        "id": "Composition.section:complications",
+        "path": "Composition.section",
+        "sliceName": "complications",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:complications.title",
+        "path": "Composition.section.title",
+        "fixedString": "Complications"
+      },
+      {
+        "id": "Composition.section:complications.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55109-3",
+              "display": "Complications Document"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:complications.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:complications.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      }
+    ]
+  }
+}

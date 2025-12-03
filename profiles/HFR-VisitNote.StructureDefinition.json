@@ -1,0 +1,192 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-VisitNote",
+  "name": "HFR_VisitNote",
+  "status": "draft",
+  "description": "Represents the visit/encounter notes including reason for presentation, anamnesis and examination notes.",
+  "fhirVersion": "5.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.status",
+        "path": "Composition.status",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Composition.type.coding",
+        "path": "Composition.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.type.coding:loincCode",
+        "path": "Composition.type.coding",
+        "sliceName": "loincCode",
+        "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/ValueSet/doc-typecodes"
+        }
+      },
+      {
+        "id": "Composition.type.coding:loincCode.system",
+        "path": "Composition.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.type.coding:loincCode.code",
+        "path": "Composition.type.coding.code",
+        "fixedCode": "107903-7"
+      },
+      {
+        "id": "Composition.type.coding:loincCode.display",
+        "path": "Composition.type.coding.display",
+        "min": 1,
+        "fixedString": "Clinical note"
+      },
+      {
+        "id": "Composition.subject",
+        "path": "Composition.subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:reasonForPresentation",
+        "path": "Composition.section",
+        "sliceName": "reasonForPresentation",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:reasonForPresentation.title",
+        "path": "Composition.section.title",
+        "fixedString": "Admission Reason / Reason for presentation"
+      },
+      {
+        "id": "Composition.section:reasonForPresentation.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "104889-1",
+              "display": "Admission reason Narrative"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:reasonForPresentation.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:reasonForPresentation.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      },
+      {
+        "id": "Composition.section:anamnesis",
+        "path": "Composition.section",
+        "sliceName": "anamnesis",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:anamnesis.title",
+        "path": "Composition.section.title",
+        "fixedString": "Anemnesis"
+      },
+      {
+        "id": "Composition.section:anamnesis.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34117-2",
+              "display": "History and physical note"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:anamnesis.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:anamnesis.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      },
+      {
+        "id": "Composition.section:physicalExamination",
+        "path": "Composition.section",
+        "sliceName": "physicalExamination",
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:physicalExamination.title",
+        "path": "Composition.section.title",
+        "fixedString": "Physical Examination Note"
+      },
+      {
+        "id": "Composition.section:physicalExamination.code",
+        "path": "Composition.section.code",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11384-5",
+              "display": "Physical examination by organ systems"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Composition.section:physicalExamination.text",
+        "path": "Composition.section.text",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:physicalExamination.text.status",
+        "path": "Composition.section.text.status",
+        "fixedCode": "additional"
+      }
+    ]
+  }
+}

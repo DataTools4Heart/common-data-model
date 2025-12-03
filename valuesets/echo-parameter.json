@@ -209,7 +209,7 @@
           },
           {
             "code": "79915-5",
-            "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW\t"
+            "display": "Pulmonary vein Maximum A-wave velocity by Ultrasound.doppler.PW"
           },
           {
             "code": "79911-4",
@@ -331,6 +331,10 @@
             "code": "93635-1",
             "display": "Right atrial End-systolic volume by US.2D.A4C"
           },
+          {
+            "code": "75994-4",
+            "display": "Pulmonary artery wedge pressure"
+          },          
           {
             "code": "18169-3",
             "display": "Aortic valve Blood velocity-time integral by US.doppler"
