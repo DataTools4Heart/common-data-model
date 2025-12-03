@@ -141,6 +141,31 @@
       "code": "NT1val",
       "display": "Native T1-mapping values",
       "definition": "Native T1-mapping values (ms)"
+    },
+    {
+      "code": "COi",
+      "display": "Cardiac output index (COi)",
+      "definition": "Cardiac output index (COi)"
+    },
+    {
+      "code": "LVEDVi",
+      "display": "Indexed left ventricular end diastolic volume",
+      "definition": "Indexed left ventricular end diastolic volume"
+    },
+    {
+      "code": "LVESVi",
+      "display": "Indexed left ventricular end systolic volume",
+      "definition": "Indexed left ventricular end systolic volume"
+    },
+    {
+      "code": "RVEDVi",
+      "display": "Indexed right ventricular end diastolic volume",
+      "definition": "Indexed right ventricular end diastolic volume"
+    },
+    {
+      "code": "RVESVi",
+      "display": "Indexed right ventricular end systolic volume",
+      "definition": "Indexed right ventricular end systolic volume"
     }
   ]
 }

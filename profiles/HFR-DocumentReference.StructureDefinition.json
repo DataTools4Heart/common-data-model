@@ -33,6 +33,7 @@
       {
         "id": "DocumentReference.context",
         "path": "DocumentReference.context",
+        "max": "1",
         "type": [
           {
             "code": "Reference",

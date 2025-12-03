@@ -881,6 +881,10 @@
         {
           "type": "Composition",
           "profile": "http://hl7.org/fhir/StructureDefinition/Composition",
+          "supportedProfile": [
+            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-SurgicalOperationNote",
+            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-VisitNote"
+          ],
           "interaction": [
             {
               "code": "read",
@@ -8341,7 +8345,9 @@
             "https://datatools4heart.eu/fhir/StructureDefinition/HFR-SocioeconomicStatus",
             "https://datatools4heart.eu/fhir/StructureDefinition/HFR-Symptom",
             "https://datatools4heart.eu/fhir/StructureDefinition/HFR-VitalSign",
-            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-RightHeartCatheterization"
+            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-RightHeartCatheterization",
+            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-ChestXRay",
+            "https://datatools4heart.eu/fhir/StructureDefinition/HFR-CoronaryAngiogram"
           ],
           "interaction": [
             {

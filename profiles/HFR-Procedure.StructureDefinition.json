@@ -154,7 +154,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-DocumentReference"
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-SurgicalOperationNote"
             ]
           }
         ]
