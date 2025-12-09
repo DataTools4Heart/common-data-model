@@ -83,6 +83,16 @@
       "definition": "LV long axis internal diameter at end-systole (mm)"
     },
     {
+      "code": "LVLADEDi",
+      "display": "Indexed Left Ventricular Long-Axis Diastolic End-Diastolic",
+      "definition": "Indexed Left Ventricular Long-Axis Diastolic End-Diastolic"
+    },
+    {
+      "code": "LVLADESi",
+      "display": "Indexed Left Ventricular Long-Axis Diastolic End-Systolic",
+      "definition": "Indexed Left Ventricular Long-Axis Diastolic End-Systolic"
+    },
+    {
       "code": "LVIT",
       "display": "LV inflow tract",
       "definition": "LV inflow tract (mm)"
