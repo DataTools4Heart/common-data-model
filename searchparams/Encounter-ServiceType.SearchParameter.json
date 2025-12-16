@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "url": "https://datatools4heart.eu/fhir/SearchParameter/Encounter_ServiceType",
+  "name": "Encounter_ServiceType",
+  "status": "draft",
+  "description": "Search parameter to filter Encounters by serviceType",
+  "code": "service-type",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.serviceType.concept",
+  "multipleOr": true,
+  "multipleAnd": false,
+  "processingMode": "normal"
+}

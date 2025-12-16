@@ -2777,6 +2777,7 @@
             "Encounter.part-of",
             "Encounter.participant",
             "Encounter.based-on",
+            "Encounter.service-type",
             "Encounter.patient",
             "Encounter.practitioner",
             "Encounter.episode-of-care",
@@ -2985,6 +2986,12 @@
               "definition": "http://hl7.org/fhir/SearchParameter/Encounter-status",
               "type": "token",
               "documentation": "planned | in-progress | on-hold | completed | cancelled | entered-in-error | unknown"
+            },
+            {
+              "name": "service-type",
+              "definition": "https://datatools4heart.eu/fhir/SearchParameter/Encounter_ServiceType",
+              "type": "token",
+              "documentation": "Specific type of service"
             }
           ]
         },
