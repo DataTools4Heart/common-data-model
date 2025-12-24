@@ -102,6 +102,10 @@
           {
             "code": "SGLT2I",
             "display": "SGLT2I (SGLT-2 Inhibitor)"
+          },
+          {
+            "code": "AntiDiabetics",
+            "display": "Anti diabetics"
           }
         ]
       }

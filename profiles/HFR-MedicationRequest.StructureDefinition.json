@@ -12,6 +12,18 @@
   "differential": {
     "element": [
       {
+        "id": "MedicationRequest",
+        "path": "MedicationRequest",
+        "constraint": [
+          {
+            "key": "cond-1",
+            "severity": "error",
+            "expression": "medication.concept.coding.where(system = 'http://www.whocc.no/atc').exists() or medication.concept.coding.where(system = 'https://datatools4heart.eu/fhir/CodeSystem/medication-group').exists()",
+            "human": "Either ATC code or ATC group code must be present."
+          }
+        ]
+      },
+      {
         "id": "MedicationRequest.medication.concept.coding",
         "path": "MedicationRequest.medication.concept.coding",
         "slicing": {
@@ -28,8 +40,7 @@
       {
         "id": "MedicationRequest.medication.concept.coding:atcCode",
         "path": "MedicationRequest.medication.concept.coding",
-        "sliceName": "atcCode",
-        "min": 1
+        "sliceName": "atcCode"
       },
       {
         "id": "MedicationRequest.medication.concept.coding:atcCode.system",
@@ -41,6 +52,26 @@
         "id": "MedicationRequest.medication.concept.coding:atcCode.code",
         "path": "MedicationRequest.medication.concept.coding.code",
         "min": 1
+      },
+      {
+        "id": "MedicationRequest.medication.concept.coding:atcCodeGroup",
+        "path": "MedicationRequest.medication.concept.coding",
+        "sliceName": "atcCodeGroup"
+      },
+      {
+        "id": "MedicationRequest.medication.concept.coding:atcCodeGroup.system",
+        "path": "MedicationRequest.medication.concept.coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/medication-group"
+      },
+      {
+        "id": "MedicationRequest.medication.concept.coding:atcCodeGroup.code",
+        "path": "MedicationRequest.medication.concept.coding.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/medication-group"
+        }
       },
       {
         "id": "MedicationRequest.subject",
