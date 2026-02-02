@@ -66,6 +66,10 @@
           {
             "code": "230060001",
             "display": "Current Light tobacco smoker"
+          },
+          {
+            "code": "43381005",
+            "display": "Passive smoker"
           }
         ]
       }
