@@ -2992,6 +2992,12 @@
               "definition": "https://datatools4heart.eu/fhir/SearchParameter/Encounter_ServiceType",
               "type": "token",
               "documentation": "Specific type of service"
+            },
+            {
+              "name": "admit-type",
+              "definition": "https://datatools4heart.eu/fhir/SearchParameter/Encounter_AdmitSource",
+              "type": "token",
+              "documentation": "From where patient was admitted (physician referral, transfer)"
             }
           ]
         },

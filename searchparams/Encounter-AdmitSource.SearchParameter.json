@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "url": "https://datatools4heart.eu/fhir/SearchParameter/Encounter_AdmitSource",
+  "name": "Encounter_AdmitSource",
+  "status": "draft",
+  "description": "Search parameter to filter Encounters by admission.admitSource",
+  "code": "admit-source",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.admission.admitSource",
+  "multipleOr": true,
+  "multipleAnd": false,
+  "processingMode": "normal"
+}
