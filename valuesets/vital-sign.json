@@ -108,6 +108,10 @@
             "display": "Mean blood pressure by Noninvasive"
           },
           {
+            "code": "76214-6",
+            "display": "Invasive Mean blood pressure"
+          },    
+          {
             "code": "59408-5",
             "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
           },
