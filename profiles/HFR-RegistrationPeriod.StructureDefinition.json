@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-RegistrationPeriod",
+  "name": "HFR_RegistrationPeriod",
+  "status": "draft",
+  "description": "Defines a registration period with mandatory start date and optional end date.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "fhirpath",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-RegistrationPeriod"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].start",
+        "path": "Extension.value[x].start",
+        "short": "Start date",
+        "definition": "Mandatory start date of registration.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].end",
+        "path": "Extension.value[x].end",
+        "short": "End date",
+        "definition": "Optional end date of registration.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}
