@@ -4,4 +4,5 @@ onfhir.conf
 logs/*
 .idea/
 onFHIRRepository.emb.mongo/*
-.simplifier
+.claude
+__pycache__
