@@ -110,6 +110,14 @@
         ]
       },
       {
+        "id": "Encounter.admission.admitSource",
+        "path": "Encounter.admission.admitSource",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-admit-source"
+        }
+      },
+      {
         "id": "Encounter.admission.origin",
         "path": "Encounter.admission.origin",
         "type": [

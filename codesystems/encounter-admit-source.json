@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "encounter-admit-source",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/encounter-admit-source",
+  "version": "1.0",
+  "name": "EncounterAdmitSource",
+  "title": "DataTools4Heart Encounter Admit Source",
+  "status": "draft",
+  "date": "2026-06-24",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Admit source codes for transport modality not covered by http://terminology.hl7.org/CodeSystem/admit-source",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "self-transport",
+      "display": "Self Transport",
+      "definition": "Patient arrived by their own means (walked in, drove themselves, or brought by family/friends without emergency services)."
+    },
+    {
+      "code": "ems-transport",
+      "display": "EMS Transport",
+      "definition": "Patient transported by ground Emergency Medical Services (ambulance)."
+    },
+    {
+      "code": "air-transport",
+      "display": "Air Transport",
+      "definition": "Patient transported by air medical services (helicopter or fixed-wing air ambulance)."
+    },
+    {
+      "code": "police-transport",
+      "display": "Police Transport",
+      "definition": "Patient transported by law enforcement."
+    }
+  ]
+}

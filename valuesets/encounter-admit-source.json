@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "encounter-admit-source",
+  "url": "https://datatools4heart.eu/fhir/ValueSet/encounter-admit-source",
+  "version": "1.0",
+  "name": "EncounterAdmitSource",
+  "title": "DataTools4Heart Encounter Admit Source",
+  "status": "draft",
+  "experimental": false,
+  "date": "2026-06-24",
+  "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
+  "contact": [
+    {
+      "name": "DataTools4Heart WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://datatools4heart.eu/"
+        }
+      ]
+    },
+    {
+      "name": "AI4HF WP2 Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ai4hf.com/"
+        }
+      ]
+    }
+  ],
+  "description": "Admit source codes used for heart failure research in DataTools4Heart and AI4HF projects, combining standard HL7 admit-source codes with project-specific transport modality codes.",
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/admit-source",
+        "concept": [
+          {
+            "code": "hosp-trans",
+            "display": "Transferred from other hospital"
+          },
+          {
+            "code": "emd",
+            "display": "From accident/emergency department"
+          },
+          {
+            "code": "outp",
+            "display": "From outpatient department"
+          },
+          {
+            "code": "born",
+            "display": "Born in hospital"
+          },
+          {
+            "code": "gp",
+            "display": "General Practitioner referral"
+          },
+          {
+            "code": "mp",
+            "display": "Medical Practitioner/physician referral"
+          },
+          {
+            "code": "nursing",
+            "display": "From nursing home"
+          },
+          {
+            "code": "psych",
+            "display": "From psychiatric hospital"
+          },
+          {
+            "code": "rehab",
+            "display": "From rehabilitation facility"
+          },
+          {
+            "code": "other",
+            "display": "Other"
+          }
+        ]
+      },
+      {
+        "system": "https://datatools4heart.eu/fhir/CodeSystem/encounter-admit-source"
+      }
+    ]
+  }
+}
