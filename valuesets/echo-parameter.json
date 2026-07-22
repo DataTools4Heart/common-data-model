@@ -48,6 +48,10 @@
             "display": "Left ventricular Ejection fraction by 2D echo"
           },
           {
+            "code": "8807-0",
+            "display": "Left ventricular Ejection fraction by 2D echo.visual estimate"
+          },
+          {
             "code": "79990-8",
             "display": "Left ventricular Ejection fraction by US.3D.segmentation"
           },
@@ -78,6 +82,10 @@
           {
             "code": "77891-0",
             "display": "Left ventricular Ejection fraction by US.2D+Calculated by Teichholz method"
+          },
+          {
+            "code": "18049-7",
+            "display": "Left ventricular Ejection fraction by US.M-mode+Calculated by Teichholz method"
           },
           {
             "code": "75988-6",
