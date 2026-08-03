@@ -13,6 +13,18 @@
   "differential": {
     "element": [
       {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "cond-1",
+            "severity": "error",
+            "expression": "code.coding.where(system = 'http://loinc.org' and (code = '89579-7' or code = '10839-9' or code = '67151-1' or code = '6598-7')).exists() implies interpretation.exists()",
+            "human": "If the lab result is a troponin measurement (LOINC code 89579-7, 10839-9, 67151-1, or 6598-7), interpretation must be present."
+          }
+        ]
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "fixedCode": "final"
