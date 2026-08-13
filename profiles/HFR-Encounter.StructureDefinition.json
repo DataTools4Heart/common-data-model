@@ -13,6 +13,20 @@
   "differential": {
     "element": [
       {
+        "id": "Encounter.extension:transportationType",
+        "path": "Encounter.extension",
+        "sliceName": "transportationType",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://datatools4heart.eu/fhir/StructureDefinition/HFR-EncounterTransportationType"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.class",
         "path": "Encounter.class",
         "min": 1,
@@ -108,14 +122,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Encounter.admission.admitSource",
-        "path": "Encounter.admission.admitSource",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-admit-source"
-        }
       },
       {
         "id": "Encounter.admission.origin",

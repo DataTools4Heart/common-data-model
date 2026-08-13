@@ -1,0 +1,74 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-EncounterTransportationType",
+  "name": "HFR_EncounterTransportationType",
+  "status": "draft",
+  "description": "The transportation modality by which the patient arrived for the encounter.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://datatools4heart.eu/fhir/StructureDefinition/HFR-EncounterTransportationType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding",
+        "path": "Extension.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x].coding:hfrEncounterTransportationType",
+        "path": "Extension.value[x].coding",
+        "sliceName": "hfrEncounterTransportationType",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://datatools4heart.eu/fhir/ValueSet/encounter-transportation-type"
+        }
+      },
+      {
+        "id": "Extension.value[x].coding:hfrEncounterTransportationType.system",
+        "path": "Extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://datatools4heart.eu/fhir/CodeSystem/encounter-transportation-type"
+      },
+      {
+        "id": "Extension.value[x].coding:hfrEncounterTransportationType.code",
+        "path": "Extension.value[x].coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

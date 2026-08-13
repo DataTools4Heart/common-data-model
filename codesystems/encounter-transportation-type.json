@@ -1,12 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "id": "encounter-admit-source",
-  "url": "https://datatools4heart.eu/fhir/CodeSystem/encounter-admit-source",
+  "id": "encounter-transportation-type",
+  "url": "https://datatools4heart.eu/fhir/CodeSystem/encounter-transportation-type",
   "version": "1.0",
-  "name": "EncounterAdmitSource",
-  "title": "DataTools4Heart Encounter Admit Source",
+  "name": "EncounterTransportationType",
+  "title": "DT4H & AI4HF Encounter Transportation Type",
   "status": "draft",
-  "date": "2026-06-24",
+  "date": "2026-08-13",
   "publisher": "DataTools4Heart-WP2 and AI4HF-WP2 Teams",
   "contact": [
     {
@@ -28,7 +28,7 @@
       ]
     }
   ],
-  "description": "Admit source codes for transport modality not covered by http://terminology.hl7.org/CodeSystem/admit-source",
+  "description": "Transportation type codes used for heart failure research in DataTools4Heart and AI4HF projects.",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
