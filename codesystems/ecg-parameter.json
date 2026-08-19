@@ -81,6 +81,16 @@
       "code": "ECG-RBBB",
       "display": "Has RBBB (Right Bundle Branch Block)",
       "definition": "A boolean indicator whether or not Right Bundle Branch Block (RBBB) is observed in ECG."
+    },
+    {
+      "code": "ECG-BIV",
+      "display": "Biatrial enlargement",
+      "definition": "A boolean indicator whether or not biatrial enlargement is observed in ECG."
+    },
+    {
+      "code": "stDeviation",
+      "display": "ST Deviation",
+      "definition": "A boolean indicator whether or not ST deviation is observed in ECG."
     }
   ]
 }
