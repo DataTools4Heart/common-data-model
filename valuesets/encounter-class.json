@@ -64,9 +64,6 @@
             "display": "short stay"
           }
         ]
-      },
-      {
-        "system": "https://datatools4heart.eu/fhir/CodeSystem/encounter-class"
       }
     ]
   }
